@@ -1,0 +1,6 @@
+{
+  "name": "ViniApp — Vibe Coding Platform",
+  "description": "Prompt-to-onchain miniapp builder with AI agentic loop, Clanker token launch, Base smart wallets, 60% fee sharing, Farcaster frames, and live cyber mobile simulator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

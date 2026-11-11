@@ -1,0 +1,266 @@
+# ==============================================================================
+# MASTER GODS AI STUDIO V12.0.0 — CANONICAL SINGLE SOURCE OF TRUTH (SSOT)
+# ULTIMATE UNIVERSAL AGENTIC AI OPERATING SYSTEM & UNIVERSAL FACTORY
+# ==============================================================================
+
+application:
+  id: "master-gods-v12-studio"
+  name: "MASTER GODS AI STUDIO V12.0.0"
+  subtitle: "Ultimate Universal Agentic AI Operating System / Agent Factory / Software Factory"
+  version: "12.0.0-release"
+  status: "PRODUCTION_RELEASE_VERIFIED"
+  releaseDate: "2026-11-02"
+  superAdmin: "gxqstudio@gmail.com"
+  license: "Apache-2.0 / Enterprise Commercial"
+
+architecture:
+  runtime: "Node.js 20 LTS / Vercel Edge Runtime"
+  frontend:
+    framework: "React 19 SPA on Vite / Next.js 15 App Router Compatible"
+    language: "TypeScript 5.6 (Strict Mode)"
+    styling: "Tailwind CSS v4 + Cyber Neon Glassmorphism Design System"
+    components: "FlashGlowCard, GlassComponentLibrary, Lucide Icons, Canvas Confetti"
+  backend:
+    api: "Typed Express / Edge API Handlers with Zod Validation"
+    orm: "Prisma 5.x / Drizzle ORM"
+    database: "PostgreSQL 16 / Cloud SQL developer instance"
+    realtime: "Supabase Realtime (build_logs channel) + PartyKit WebSockets"
+  security:
+    auth: "Google OAuth 2.0 (Client-side Bearer PKCE) + Web3 Wallet Signer"
+    rbac:
+      roles:
+        - "PLATFORM_SUPER_ADMIN"
+        - "ORG_OWNER"
+        - "ORG_ADMIN"
+        - "APP_OWNER"
+        - "BUILDER"
+        - "VIEWER"
+    encryption: "RS256 JWT, Ed25519 Signers, AES-256 masked key storage"
+
+designSystem:
+  theme: "Cyber Neon Glassmorphism"
+  tokens:
+    godsBackground: "#05070B"
+    godsSurface: "#0B1019"
+    godsGlass: "rgba(18, 25, 39, 0.72)"
+    godsGlassStrong: "rgba(12, 17, 28, 0.90)"
+    neonPurple: "#A855F7"
+    neonOrange: "#F97316"
+    neonRed: "#EF4444"
+    neonGreen: "#22C55E"
+    neonYellow: "#EAB308"
+    neonCyan: "#06B6D4"
+    neonBlue: "#3B82F6"
+    textPrimary: "#F8FAFC"
+    textSecondary: "#A1AEC0"
+    textMuted: "#64748B"
+    glassBorder: "rgba(148, 163, 184, 0.16)"
+    glassBlur: "18px"
+    radiusSm: "12px"
+    radiusMd: "18px"
+    radiusLg: "24px"
+    radiusXl: "30px"
+  components:
+    - FlashGlowCard
+    - GlassCard
+    - GlassPanel
+    - GlassHeader
+    - GlassSidebar
+    - GlassNavigation
+    - GlassTabs
+    - GlassInput
+    - GlassTextarea
+    - GlassSelect
+    - GlassDropdown
+    - GlassDialog
+    - GlassDrawer
+    - GlassTooltip
+    - GlassTable
+    - GlassCodePanel
+    - GlassMessage
+    - GlassComposer
+    - NeonButton
+    - NeonIconButton
+    - NeonBadge
+    - NeonStatus
+    - NeonProgress
+    - GlassSkeleton
+    - GlassEmptyState
+    - GlassErrorState
+
+agents:
+  count: 17
+  lifecycle:
+    states: ["QUEUED", "RUNNING", "COMPLETED", "FAILED", "BLOCKED", "RETRYING", "CANCELLED"]
+  roster:
+    - id: "agent_orchestrator"
+      name: "Master Orchestrator"
+      role: "High-level plan formulation, task dependency graphs, and agent synthesis."
+    - id: "agent_requirements"
+      name: "Requirements Analyst"
+      role: "Natural-language specification breakdown, business logic extraction, and scope definition."
+    - id: "agent_prod_architect"
+      name: "Product Architect"
+      role: "Information architecture, user journey maps, and UX specifications."
+    - id: "agent_systems_architect"
+      name: "Systems Architect"
+      role: "System topology, Mermaid entity diagrams, and API contract specifications."
+    - id: "agent_database_engineer"
+      name: "Database Engineer"
+      role: "Prisma and PostgreSQL schema modeling, indices, and database migrations."
+    - id: "agent_backend_engineer"
+      name: "Backend Engineer"
+      role: "Server actions, typed routes, authentication hooks, and rate limiting."
+    - id: "agent_frontend_engineer"
+      name: "Frontend Engineer"
+      role: "React 19 / Next.js 15 UI component synthesis and state management."
+    - id: "agent_ui_designer"
+      name: "UI/UX Designer"
+      role: "Cyber neon styling, responsive breakpoint math, and touch targets."
+    - id: "agent_asset_generator"
+      name: "Asset Generator"
+      role: "Vector SVGs, logos, Lottie animation tokens, and branding assets."
+    - id: "agent_model_integrator"
+      name: "Model Integration Engineer"
+      role: "Multi-model adapter wiring for Gemini, Claude, OpenAI, and DeepSeek."
+    - id: "agent_api_integrator"
+      name: "API Integration Engineer"
+      role: "Third-party protocol bridges (Farcaster, Base L2, GitHub, Vercel)."
+    - id: "agent_security_engineer"
+      name: "Security Engineer"
+      role: "AST vulnerability analysis, formal verification, Slither scan, and RBAC enforcement."
+    - id: "agent_qa_critic"
+      name: "QA Critic"
+      role: "Independent verification, defect scoring, and build gate assertions."
+    - id: "agent_performance_engineer"
+      name: "Performance Engineer"
+      role: "Web Vitals projection, gzip bundle reduction, and calldata gas tuning."
+    - id: "agent_documentation_agent"
+      name: "Documentation Agent"
+      role: "OpenAPI definitions, README generation, and developer documentation."
+    - id: "agent_devops_engineer"
+      name: "DevOps Engineer"
+      role: "GitHub Actions CI/CD workflows, Docker containerization, and Vercel edge deployment."
+    - id: "agent_release_auditor"
+      name: "Release Auditor"
+      role: "Final zero-false-pass certification and acceptance gate signoff."
+
+modelProviders:
+  adapters:
+    - id: "gemini"
+      name: "Google Gemini 2.5 Flash / Pro"
+      status: "ONLINE"
+      defaultModel: "gemini-2.5-flash"
+      contextWindow: 1000000
+      latencyAvgMs: 110
+    - id: "anthropic"
+      name: "Anthropic Claude 3.7 Sonnet"
+      status: "ONLINE"
+      defaultModel: "claude-3-7-sonnet"
+      contextWindow: 200000
+      latencyAvgMs: 240
+    - id: "openai"
+      name: "OpenAI GPT-4o / o1"
+      status: "ONLINE"
+      defaultModel: "gpt-4o"
+      contextWindow: 128000
+      latencyAvgMs: 280
+    - id: "deepseek"
+      name: "DeepSeek-V3 / R1"
+      status: "ONLINE"
+      defaultModel: "deepseek-chat"
+      contextWindow: 64000
+      latencyAvgMs: 190
+    - id: "local_ollama"
+      name: "Ollama Local Engine"
+      status: "STANDBY"
+      defaultModel: "llama3.3:70b"
+      contextWindow: 32000
+      latencyAvgMs: 85
+
+universalFactory:
+  archetypes:
+    - id: "trucking_platform"
+      title: "Enterprise Fleet & Trucking Logistics"
+      category: "Enterprise SaaS & Telemetry"
+      features:
+        - "Live GPS Telemetry & Route Optimization"
+        - "ELD Compliance & Driver HOS Logs"
+        - "Automated Freight Dispatch & Load Matching"
+        - "Base L2 Smart Contract Escrow for Carrier Payments"
+    - id: "ai_saas_platform"
+      title: "Multi-Agent AI SaaS Platform"
+      category: "AI & Autonomous Workspaces"
+      features:
+        - "Team Workspace RBAC & Granular Seat Allocations"
+        - "Task Pipeline Graph & Multi-Agent Execution"
+        - "Vector Search & Retrieval Augmented Generation (RAG)"
+        - "Usage-based Credit Billing with Stripe Settlement"
+    - id: "racing_game_3d"
+      title: "Cyber Nitro 3D Racing Simulator"
+      category: "Interactive 3D Gaming & Web3"
+      features:
+        - "WebGL Three.js Physics & Dynamic Shadow Canvas"
+        - "Real-time Lap Telemetry & Ghost Car Replay"
+        - "Onchain Global Leaderboard with Verified Hashes"
+        - "NFT Vehicle Customization & Token Bonding Curve"
+
+artifactManagement:
+  operations:
+    - "CREATE"
+    - "OPEN"
+    - "PREVIEW"
+    - "EDIT"
+    - "SAVE"
+    - "COPY"
+    - "RENAME"
+    - "DELETE"
+    - "DUPLICATE"
+    - "MOVE"
+    - "DOWNLOAD"
+    - "RESTORE"
+    - "COMPARE"
+    - "EXPORT"
+  verification: "SHA-256 Checksums, Audit Trails, and Read-Back Consistency"
+
+commercialPlatform:
+  pricingTiers:
+    - id: "tier_free"
+      name: "Community Developer"
+      priceUsd: 0
+      creditsMonthly: 50
+    - id: "tier_pro"
+      name: "Pro Builder"
+      priceUsd: 29
+      creditsMonthly: 1000
+    - id: "tier_enterprise"
+      name: "Enterprise Elite"
+      priceUsd: 199
+      creditsMonthly: 10000
+  legalCenter:
+    - "Terms of Service (v11.0)"
+    - "Privacy Policy (GDPR / CCPA Compliant)"
+    - "Acceptable Use Policy"
+    - "AI Output & Code Synthesis Disclaimer"
+    - "Refund and Cancellation Policy"
+    - "Data Processing Agreement (DPA)"
+    - "Intellectual Property Policy"
+
+productionAcceptanceGates:
+  gate1: { name: "Repository Inspection", status: "VERIFIED" }
+  gate2: { name: "Canonical SSOT Blueprint", status: "VERIFIED" }
+  gate3: { name: "Requirements Extraction Engine", status: "VERIFIED" }
+  gate4: { name: "17-Agent Master Orchestrator", status: "VERIFIED" }
+  gate5: { name: "Multi-Model Router Adapter", status: "VERIFIED" }
+  gate6: { name: "Universal Software Factory", status: "VERIFIED" }
+  gate7: { name: "Persistent Artifact System", status: "VERIFIED" }
+  gate8: { name: "Gemini-Inspired Mobile Workspace", status: "VERIFIED" }
+  gate9: { name: "First-Class Asset Studio", status: "VERIFIED" }
+  gate10: { name: "Cyber Neon Glassmorphism Design", status: "VERIFIED" }
+  gate11: { name: "Enterprise RBAC & Super Admin", status: "VERIFIED" }
+  gate12: { name: "Commercial & Legal Center", status: "VERIFIED" }
+  gate13: { name: "Observability & Live Build Logs", status: "VERIFIED" }
+  gate14: { name: "GitHub Actions CI/CD & Vercel Edge", status: "VERIFIED" }
+  gate15: { name: "Independent QA Defect Audit", status: "VERIFIED" }
+  gate16: { name: "Mandatory Archetype Verification", status: "VERIFIED" }
+  gate17: { name: "Production Release Gate Certified", status: "VERIFIED" }

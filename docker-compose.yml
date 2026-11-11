@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=postgresql://viniapp:viniapp_secret@postgres:5432/viniapp_db?schema=public
+      - NEXT_PUBLIC_PRIVY_APP_ID=clviniapp200privy
+      - NEXT_PUBLIC_BASE_RPC_URL=https://mainnet.base.org
+      - VERCEL_API_TOKEN=mock_vercel_token
+      - GITHUB_APP_ID=mock_github_app_id
+      - SUPABASE_REALTIME_URL=wss://realtime.viniapp.internal/v1
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:16-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: viniapp
+      POSTGRES_PASSWORD: viniapp_secret
+      POSTGRES_DB: viniapp_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

@@ -1,0 +1,2008 @@
+MASTER GODS AI STUDIO V12.0.0
+
+ULTIMATE UNIVERSAL AGENTIC AI OPERATING SYSTEM
+
+SINGLE SOURCE OF TRUTH — COMPLETE PRODUCTION IMPLEMENTATION
+
+RELEASE: 12.0.0
+PRODUCT: MASTER GODS AI STUDIO
+CLASS: Enterprise Universal AI Studio / Agent Factory / Software Factory / Workflow Factory
+IMPLEMENTATION TARGET: Existing Google AI Studio / Gemini application and its connected repository, backend, database, infrastructure and integrations.
+MISSION: Transform the existing application into a fully functional, secure, extensible, multi-provider, multi-agent AI production platform.
+
+⸻
+
+0. MASTER DIRECTIVE — NON-NEGOTIABLE
+
+You are the principal enterprise software architect, senior full-stack engineer, AI systems engineer, database architect, security engineer, DevOps engineer, QA engineer and release manager.
+
+Your assignment is to inspect, upgrade, consolidate and implement the existing MASTER GODS application into V12.0.0.
+
+This is NOT a request to create another mockup, landing page, static dashboard, prototype, UI-only application or collection of disconnected features.
+
+You must implement a coherent, working software platform.
+
+Absolute requirements
+
+1. Preserve existing working functionality.
+2. Inspect the actual repository before making changes.
+3. Reuse working components, integrations, database structures and services where appropriate.
+4. Eliminate duplicate, conflicting and obsolete implementations safely.
+5. Build one canonical architecture and one source of truth.
+6. Make every visible feature connect to a real backend operation or clearly identified unavailable capability.
+7. Make AI agents dynamically respond to the actual user’s request.
+8. Agents must produce different plans, code, files and outputs based on the actual task.
+9. Agents must be able to create, test, version and deploy new specialist agents within their authorized permissions.
+10. Implement real provider adapters, APIs, database operations, tool integrations and execution tracking.
+11. Implement actual file creation, editing, reading, downloading, versioning and project persistence.
+12. Implement tests and verify results by reading them back from their source of truth.
+13. Never represent a simulated, mocked, queued or failed operation as completed.
+14. Never fabricate provider responses, model availability, API credentials, deployment status, transaction confirmations or test results.
+15. Do not expose secrets or privileged server operations to the browser.
+16. Do not delete production data, Git history, lockfiles or existing working integrations during upgrades.
+17. Do not silently downgrade functionality or replace a working implementation with a static demonstration.
+
+Core rule: NOTHING IS REAL UNTIL EXECUTED AND VERIFIED EXTERNALLY.
+
+When an operation cannot be implemented because of missing credentials, infrastructure, provider access, billing, permissions or platform restrictions, implement its configuration and integration boundary where possible, mark it BLOCKED, identify the exact dependency and provide a truthful next step.
+
+Do not invent successful execution.
+
+⸻
+
+1. VERSION CONSOLIDATION — ONE PRODUCT
+
+Consolidate all existing GODS generations into V12.0.0.
+
+Previous generation	Capabilities retained
+V7	Enterprise architecture, SSOT, production implementation, repository integrity, security, testing and release gates
+V8	Landing page, authentication, registration, pricing, subscriptions, legal pages, SEO, documentation
+V9	Agentic intelligence, requirements analysis, orchestration, coding, QA and repair
+V10	Universal application, game, AI, asset, integration and Web3 generation
+V10.1	Dynamic execution, request-specific project generation, artifacts and Gemini-inspired workspace
+V10.2	Production audit, security, performance, observability, reliability and release validation
+V10.3	Cyber neon glassmorphism design system and responsive application experience
+V11	Unified enterprise AI operating system and universal software factory
+V11 Dynamic Agentic Core	Dynamic team assembly, agent creation, agent collaboration, capability registry, model routing, continuous improvement and workflow factory
+V12	Complete unified implementation, integration, verification, lifecycle management and release control
+
+Do not implement these as separate applications or competing architectures.
+
+Build one unified platform.
+
+Retain compatibility with the existing V7 implementation contract where it exists:
+
+* 10 implementation phases.
+* 27 specification sections.
+* 17 acceptance gates.
+
+Preserve their existing definitions when available in the repository. Do not invent replacements or reinterpret them as 27 phases. Map V12 features into the existing structure and extend it without losing prior requirements.
+
+⸻
+
+2. SINGLE SOURCE OF TRUTH
+
+Create and maintain one canonical platform blueprint:
+
+gods.blueprint.yaml
+
+This is the authoritative configuration for:
+
+* Platform identity and version.
+* Application architecture.
+* Frontend modules.
+* Backend services.
+* Database entities and relationships.
+* Authentication and authorization.
+* Agent capabilities and registries.
+* Model providers and routing policies.
+* Tool and connector integrations.
+* Project templates.
+* Workflow definitions.
+* Asset generation.
+* Billing and subscriptions.
+* Security policies.
+* Deployment environments.
+* Feature flags.
+* Testing and release gates.
+
+No module should maintain an incompatible private definition of shared platform behavior.
+
+Required supporting files:
+
+/gods.blueprint.yaml
+/docs/ARCHITECTURE.md
+/docs/IMPLEMENTATION_PLAN.md
+/docs/API_REFERENCE.md
+/docs/AGENT_SYSTEM.md
+/docs/PROVIDER_INTEGRATIONS.md
+/docs/SECURITY.md
+/docs/DEPLOYMENT.md
+/docs/DATABASE.md
+/docs/TESTING.md
+/docs/CHANGELOG.md
+/docs/RELEASE_V12.md
+
+Implement blueprint schema validation, versioning, migrations, compatibility checks and rollback.
+
+A blueprint edit must trigger dependency analysis and validation before it becomes the active version.
+
+⸻
+
+3. COMPLETE PLATFORM ARCHITECTURE
+
+Build a modular architecture with the following functional layers.
+
+1. User experience and application workspace.
+2. Authentication and authorization.
+3. API gateway and request validation.
+4. Requirements intelligence engine.
+5. Master orchestration engine.
+6. Dynamic agent factory.
+7. Agent execution and collaboration engine.
+8. Model provider and routing engine.
+9. Tool and connector registry.
+10. Universal software factory.
+11. AI and model application factory.
+12. Game development factory.
+13. Asset generation studio.
+14. Workflow and automation factory.
+15. Web3 and blockchain factory.
+16. Project and artifact management.
+17. Database and persistence layer.
+18. Billing and subscription engine.
+19. Administration and governance.
+20. Testing, observability and deployment.
+21. Security, audit and compliance.
+
+Use clear module boundaries, typed interfaces, service ownership and dependency rules.
+
+Choose implementation technologies compatible with the existing repository and deployment platform. Do not replace the existing stack merely for preference.
+
+Where suitable, support:
+
+* TypeScript strict mode.
+* React / Next.js.
+* Tailwind CSS.
+* Accessible component systems.
+* PostgreSQL.
+* Prisma or Drizzle.
+* Redis or an equivalent queue/cache.
+* Object storage.
+* Docker.
+* CI/CD.
+* Server-side provider adapters.
+
+If the current application uses a different supported architecture, adapt the design rather than creating an incompatible second stack.
+
+⸻
+
+4. DYNAMIC AGENTIC INTELLIGENCE ENGINE
+
+4.1 Core principle
+
+GODS must not rely on one permanent team of fixed agents.
+
+The user’s request determines the architecture, team, model assignments, tools, tasks, workflow and deliverables.
+
+Examples:
+
+* Build a trucking business application.
+* Create a multiplayer 3D racing game.
+* Develop a multi-provider AI assistant.
+* Build a business automation system.
+* Create a blockchain dApp.
+* Integrate wallet connections and a swap interface.
+* Generate a website and mobile application.
+* Create and deploy a new AI agent.
+* Build a workflow that coordinates multiple agents.
+* Repair an existing application.
+* Research, compare and produce a business report.
+
+Each request must produce an appropriate execution plan.
+
+4.2 Dynamic request lifecycle
+
+Implement this actual execution pipeline:
+
+USER REQUEST
+    ↓
+INTENT AND REQUIREMENTS ANALYSIS
+    ↓
+CONSTRAINTS AND RISK DETECTION
+    ↓
+PROJECT / TASK CLASSIFICATION
+    ↓
+CAPABILITY REGISTRY SEARCH
+    ↓
+DYNAMIC AGENT TEAM ASSEMBLY
+    ↓
+MISSING CAPABILITY DETECTION
+    ↓
+SPECIALIST AGENT CREATION IF NEEDED
+    ↓
+MODEL AND TOOL ASSIGNMENT
+    ↓
+DEPENDENCY GRAPH AND EXECUTION PLAN
+    ↓
+PARALLEL / SEQUENTIAL EXECUTION
+    ↓
+AGENT COLLABORATION AND HANDOFFS
+    ↓
+ARTIFACT AND SOURCE GENERATION
+    ↓
+INTEGRATION
+    ↓
+TESTING AND INDEPENDENT CRITIQUE
+    ↓
+REPAIR AND RE-TEST
+    ↓
+READ-BACK VERIFICATION
+    ↓
+APPROVAL WHEN REQUIRED
+    ↓
+DEPLOYMENT / DELIVERY
+    ↓
+PERSISTENT EXECUTION REPORT
+
+Each stage must have a real state, timestamp, owner, execution record and error state.
+
+4.3 Capability registry
+
+Create a persistent Agent Capability Registry.
+
+Each agent record must include:
+
+* Agent ID.
+* Name and description.
+* Agent type.
+* Capabilities.
+* Supported domains.
+* Frameworks and programming languages.
+* Available tools.
+* Provider and model requirements.
+* Input and output schemas.
+* Dependencies.
+* Permissions.
+* Security classification.
+* Cost and execution limits.
+* Reliability and evaluation scores.
+* Version.
+* Availability.
+* Deployment status.
+* Created and updated timestamps.
+* Owner and tenant.
+* Test and approval history.
+
+The registry must support search, filtering, capability matching, availability checks and version selection.
+
+4.4 Dynamic team assembly
+
+For each request:
+
+1. Extract requirements.
+2. Identify required capabilities.
+3. Search the registry.
+4. Select compatible agents.
+5. Detect capability gaps.
+6. Create missing specialists when justified.
+7. Assign tools and least-privilege permissions.
+8. Build task dependencies.
+9. Assign provider/model configurations.
+10. Execute independent tasks concurrently when safe.
+11. Coordinate handoffs.
+12. Integrate outputs.
+13. Run independent QA.
+14. Repair failures.
+15. Deliver verified results.
+
+Do not create unnecessary agents simply to inflate agent counts.
+
+Selection must consider capability, reliability, compatibility, security, availability, cost and latency.
+
+4.5 Agent Factory
+
+Users and authorized orchestrators must be able to create new agents.
+
+Agent creation must generate:
+
+* Agent specification.
+* System instructions.
+* Capability manifest.
+* Input schema.
+* Output schema.
+* Tool permission manifest.
+* Model/provider configuration.
+* Execution strategy.
+* Error handling.
+* Logging and tracing.
+* Evaluation cases.
+* Security tests.
+* Documentation.
+* Version and release metadata.
+
+Lifecycle:
+
+DESIGN
+→ GENERATE
+→ VALIDATE
+→ TEST
+→ SECURITY REVIEW
+→ APPROVE
+→ DEPLOY
+→ MONITOR
+→ IMPROVE
+→ VERSION / ROLLBACK / RETIRE
+
+Agents must be testable in isolated environments before deployment.
+
+New agents must not automatically receive production privileges.
+
+Support:
+
+* Create.
+* Edit.
+* Duplicate.
+* Test.
+* Enable.
+* Disable.
+* Version.
+* Compare.
+* Roll back.
+* Export.
+* Import.
+* Publish.
+* Retire.
+
+Support private, organization and marketplace agents with explicit permission and review controls.
+
+4.6 Agent-to-agent collaboration
+
+Implement real task delegation, not agents merely writing messages about work.
+
+Each handoff must include:
+
+* Parent execution ID.
+* Child task ID.
+* Project ID.
+* Requirement IDs.
+* Input artifact references.
+* Expected output schema.
+* Dependencies.
+* Permissions.
+* Assigned agent and version.
+* Assigned model.
+* Deadline.
+* Retry policy.
+* Status.
+* Validation result.
+
+Support:
+
+* Delegation.
+* Consultation.
+* Parallel work.
+* Peer review.
+* Independent critique.
+* Conflict detection.
+* Merge conflict resolution.
+* Escalation.
+* Human approval.
+* Cancellation.
+* Recovery.
+* Retry.
+* Result reconciliation.
+
+Agents must never silently overwrite another agent’s files or database changes.
+
+Use artifact ownership, versioning, locks or controlled merge operations.
+
+4.7 Self-improvement and learning
+
+Implement three distinct systems.
+
+A. Context learning
+
+Use approved project context, documentation, user-approved preferences and versioned knowledge.
+
+B. Evaluation-driven improvement
+
+* Store evaluation datasets.
+* Run repeatable tests.
+* Compare agent versions.
+* Measure quality, reliability, cost and latency.
+* Detect regressions.
+* Improve prompts, workflows and tool strategies.
+* Require approval for production promotion where appropriate.
+
+C. Actual model training or fine-tuning
+
+Only implement where the selected provider or authorized self-hosted infrastructure supports it.
+
+Require approved datasets, privacy controls, licensing checks, retention policies, evaluation baselines, candidate comparison, approvals and rollback.
+
+Never claim that storing conversations retrains a hosted model.
+
+Never claim GPT, Gemini, Claude or another hosted model’s weights were changed unless the provider explicitly supports and confirms that operation.
+
+4.8 Agentic execution contract
+
+Implement a persistent, typed execution object equivalent to:
+
+interface AgenticExecution {
+  id: string;
+  tenantId: string;
+  userId: string;
+  projectId?: string;
+  request: string;
+  requirements: Requirement[];
+  blueprintVersion?: string;
+  selectedAgents: AgentAssignment[];
+  createdAgents: AgentVersion[];
+  modelAssignments: ModelAssignment[];
+  taskGraph: TaskNode[];
+  artifacts: ArtifactReference[];
+  approvals: Approval[];
+  testResults: TestResult[];
+  deployment?: DeploymentRecord;
+  status: ExecutionStatus;
+  createdAt: string;
+  updatedAt: string;
+}
+
+Implement the actual database schema and validation. Do not leave this as a TypeScript-only illustration.
+
+⸻
+
+5. MASTER ORCHESTRATOR
+
+Create a real orchestration service responsible for:
+
+* Understanding user intent.
+* Managing context.
+* Detecting ambiguity.
+* Creating requirements.
+* Planning execution.
+* Selecting agents.
+* Selecting models.
+* Selecting tools.
+* Managing task dependencies.
+* Controlling concurrency.
+* Tracking budgets.
+* Managing retries.
+* Preventing duplicate operations.
+* Resolving conflicting outputs.
+* Enforcing approvals.
+* Verifying deliverables.
+* Reporting actual outcomes.
+
+The orchestrator must support short requests and complex multi-stage projects.
+
+It must ask a focused clarification question when an essential requirement is missing. Otherwise, make safe, clearly documented assumptions and continue.
+
+The orchestrator must not force every request through a fixed workflow.
+
+⸻
+
+6. MULTI-PROVIDER MODEL INTELLIGENCE
+
+Implement a real Model Provider Registry and Adapter SDK.
+
+6.1 Provider families
+
+Design integrations for:
+
+* OpenAI.
+* Google Gemini.
+* Anthropic Claude.
+* DeepSeek.
+* Azure-hosted model services.
+* OpenAI-compatible endpoints.
+* Ollama and supported local inference services.
+* Additional providers through a documented adapter interface.
+
+Provider support is capability-dependent. Do not assume every provider supports every model, tool, modality or feature.
+
+6.2 Provider adapter contract
+
+Each adapter must implement supported operations such as:
+
+interface ModelProviderAdapter {
+  validateConfiguration(): Promise<ValidationResult>;
+  listModels(): Promise<ModelDescriptor[]>;
+  getCapabilities(modelId: string): Promise<ModelCapabilities>;
+  generate(request: GenerationRequest): Promise<GenerationResult>;
+  stream(request: GenerationRequest): AsyncIterable<GenerationEvent>;
+  healthCheck(): Promise<ProviderHealth>;
+  estimateUsage?(request: GenerationRequest): Promise<UsageEstimate>;
+}
+
+Implement provider-specific request/response normalization, streaming, structured outputs, tool calls, error mapping, retries, timeouts and usage tracking.
+
+Do not fabricate model IDs or endpoints. Maintain provider configuration from verified documentation and actual API responses.
+
+6.3 Intelligent model router
+
+Select models based on:
+
+* Task complexity.
+* Reasoning requirements.
+* Coding ability.
+* Context capacity.
+* Vision and multimodal requirements.
+* Audio and video capabilities.
+* Structured output.
+* Tool calling.
+* Streaming.
+* Latency.
+* Cost.
+* Provider health.
+* Reliability.
+* User policy.
+* Data security requirements.
+
+Support:
+
+* Primary model.
+* Fallback model.
+* Task-specific model.
+* Provider failover.
+* Manual model selection.
+* Automatic model selection.
+* Per-project model policy.
+* Per-agent model assignment.
+* Cost limits.
+* Usage limits.
+
+Never switch providers silently when doing so violates the user’s data policy or project configuration.
+
+6.4 Provider management UI
+
+Create a working administration page with:
+
+* Provider list.
+* Connection status.
+* Credential configuration.
+* Secret validation.
+* Model discovery.
+* Capability matrix.
+* Health checks.
+* Latency.
+* Usage.
+* Cost.
+* Error history.
+* Routing rules.
+* Fallback configuration.
+* Enable/disable controls.
+
+Store credentials securely on the server. Display masked values only.
+
+⸻
+
+7. TOOL AND CONNECTOR ECOSYSTEM
+
+Build a registry-based integration system.
+
+Tool categories:
+
+* Code execution and repository operations.
+* File management.
+* Database operations.
+* Browser and research.
+* Search.
+* Image generation.
+* Audio generation.
+* Video generation.
+* 3D and game asset tools.
+* Testing and QA.
+* Deployment.
+* GitHub and Git providers.
+* Cloud storage.
+* Email and notifications.
+* Business systems.
+* Payment providers.
+* Analytics.
+* Blockchain and wallet integrations.
+* Automation services.
+
+Each tool must have:
+
+* Tool ID.
+* Provider.
+* Capability description.
+* Input/output schema.
+* Authentication type.
+* Permissions.
+* Rate limits.
+* Availability.
+* Timeout.
+* Retry policy.
+* Security classification.
+* Execution logging.
+* Test results.
+* Version.
+
+Implement actual connector operations where credentials and supported APIs are available.
+
+Do not display a connected status when only a configuration form exists.
+
+⸻
+
+8. UNIVERSAL SOFTWARE FACTORY
+
+Build a production application-generation system.
+
+Support generation and modification of:
+
+* Websites.
+* Web applications.
+* Mobile applications.
+* SaaS platforms.
+* Enterprise dashboards.
+* APIs.
+* Backend services.
+* Admin panels.
+* Databases.
+* E-commerce platforms.
+* Business systems.
+* Portals.
+* Developer tools.
+* Internal tools.
+* Browser applications.
+* PWA applications.
+* Supported desktop applications.
+
+8.1 Natural-language project creation
+
+User enters a request.
+
+GODS must:
+
+1. Analyze the requirements.
+2. Identify the target platform.
+3. Choose an appropriate technology stack.
+4. Create an architecture.
+5. Generate a project blueprint.
+6. Assemble the required agents.
+7. Generate a complete file structure.
+8. Implement source files.
+9. Configure dependencies.
+10. Implement database and migrations.
+11. Implement APIs and services.
+12. Implement authentication and authorization.
+13. Implement the user interface.
+14. Integrate required providers.
+15. Run tests.
+16. Repair defects.
+17. Verify the generated project.
+18. Deliver the project with build and deployment instructions.
+
+8.2 Real source generation
+
+Do not return the same generic files for every prompt.
+
+Generation must be request-specific.
+
+Files must contain meaningful implementation based on the actual requirements.
+
+Support:
+
+* Complete file creation.
+* File editing.
+* File deletion with confirmation.
+* Folder creation.
+* File renaming.
+* File comparison.
+* Syntax highlighting.
+* Search.
+* Diff view.
+* Version history.
+* Undo and rollback.
+* Copy.
+* Download.
+* Export.
+* Git synchronization.
+* Project persistence.
+
+When the user requests an edit, modify the relevant existing project rather than generating an unrelated replacement.
+
+8.3 Code quality
+
+Implement:
+
+* Strict typing.
+* Input validation.
+* Error boundaries.
+* Secure API patterns.
+* Reusable components.
+* Separation of concerns.
+* Accessible UI.
+* Responsive behavior.
+* Dependency management.
+* Linting.
+* Type checking.
+* Unit tests.
+* Integration tests.
+* End-to-end tests.
+* Build verification.
+
+Do not delete package lockfiles to resolve dependency issues. Use safe, reproducible dependency updates.
+
+⸻
+
+9. AI STUDIO AND MODEL APPLICATION FACTORY
+
+Allow users to create AI-powered applications and assistants.
+
+Support:
+
+* Chat applications.
+* AI copilots.
+* Research assistants.
+* Document assistants.
+* RAG applications.
+* Knowledge bases.
+* Customer support agents.
+* Coding agents.
+* Voice assistants.
+* Multimodal assistants.
+* Multi-agent applications.
+* Custom model-powered workflows.
+* Agent APIs.
+* Embedded AI interfaces.
+
+Implement:
+
+* System instructions.
+* Context management.
+* Conversation persistence.
+* Model selection.
+* Provider selection.
+* Tool calling.
+* Knowledge ingestion.
+* Retrieval.
+* Citations where supported.
+* Streaming.
+* Session management.
+* User permissions.
+* Evaluation.
+* Usage limits.
+* Export.
+
+Provide a real AI application preview and test environment.
+
+⸻
+
+10. GAME DEVELOPMENT FACTORY
+
+Allow users to generate and modify games based on their prompts.
+
+Support appropriate technologies such as:
+
+* Three.js.
+* WebGL.
+* WebGPU where supported.
+* Babylon.js.
+* Phaser.
+* Unity or Unreal integrations where actual tooling and licensing permit.
+* Other compatible game engines.
+
+Game types:
+
+* 2D games.
+* 3D games.
+* Racing games.
+* Platformers.
+* Strategy games.
+* Simulation games.
+* Arcade games.
+* Puzzle games.
+* Multiplayer experiences.
+* Blockchain-enabled games.
+
+Implement game-specific agents when needed:
+
+* Game Designer.
+* Gameplay Programmer.
+* Physics Engineer.
+* Environment Designer.
+* Character Designer.
+* Animation Specialist.
+* Sound Designer.
+* UI Designer.
+* Level Designer.
+* Performance Engineer.
+* QA Tester.
+
+Generate actual game assets, scenes, source files, physics, controls, menus, game states, sound integration and test procedures.
+
+Support mobile and desktop controls, performance profiles and reduced-motion settings.
+
+Never describe a static screenshot as a playable game.
+
+⸻
+
+11. ASSET GENERATION STUDIO
+
+Create a dedicated asset-generation environment.
+
+Support, subject to connected tool capabilities:
+
+* Logos.
+* Icons.
+* Illustrations.
+* Images.
+* SVGs.
+* Backgrounds.
+* UI graphics.
+* 3D models.
+* Textures.
+* Materials.
+* Animations.
+* Lottie.
+* Audio.
+* Music.
+* Sound effects.
+* Video.
+* Game sprites.
+* Game environments.
+* Brand kits.
+
+Implement:
+
+* Prompt editor.
+* Asset type selection.
+* Dimensions.
+* Aspect ratio.
+* Style instructions.
+* Variations.
+* Preview.
+* Regeneration.
+* Editing.
+* Version history.
+* Metadata.
+* Project linking.
+* Download.
+* Storage.
+* Usage rights metadata.
+
+Generated assets must be stored as real files or provider-backed artifacts with persistent references.
+
+Do not invent downloadable files or fake asset URLs.
+
+⸻
+
+12. UNIVERSAL WORKFLOW AND AUTOMATION FACTORY
+
+Allow users to create workflows using natural language and a visual editor.
+
+Each workflow supports:
+
+* Name.
+* Description.
+* Trigger.
+* Inputs.
+* Conditions.
+* Actions.
+* Agent assignments.
+* Model assignments.
+* Tool requirements.
+* Connector configuration.
+* Permissions.
+* Retry policies.
+* Error handling.
+* Timeouts.
+* Logging.
+* Notifications.
+* Approval steps.
+* Tests.
+* Versioning.
+* Deployment state.
+
+Workflow engine must support:
+
+* Sequential tasks.
+* Parallel tasks.
+* Conditional branches.
+* Loops with safe limits.
+* Scheduled triggers where supported.
+* Webhook triggers.
+* Manual triggers.
+* Event triggers.
+* Human approvals.
+* Pause.
+* Resume.
+* Cancel.
+* Retry.
+* Rollback where safe.
+* Execution history.
+
+Create an execution timeline with actual step results.
+
+Never claim a workflow ran successfully merely because it was saved.
+
+⸻
+
+13. WEB3 AND BLOCKCHAIN FACTORY
+
+Support generation of blockchain applications and integrations where compatible providers and network APIs are available.
+
+Examples:
+
+* Wallet interfaces.
+* Token dashboards.
+* Portfolio applications.
+* NFT applications.
+* Token launch interfaces.
+* Smart contract projects.
+* DAO dashboards.
+* Blockchain analytics.
+* Cross-chain applications.
+* Swap interfaces.
+* Transaction explorers.
+* Web3 games.
+* On-chain identity integrations.
+
+Potential ecosystems include EVM-compatible chains and Solana, subject to actual SDK and provider support.
+
+13.1 Wallet integrations
+
+Support appropriate wallet standards and integrations.
+
+Implement:
+
+* Wallet connection.
+* Address display.
+* Network detection.
+* Balance retrieval.
+* Token metadata.
+* Transaction history where supported.
+* Network switching.
+* Disconnect.
+* Error handling.
+
+Never request or store seed phrases or private keys.
+
+13.2 Swap and transaction engine
+
+A real swap interface must support, where the selected chain/provider permits:
+
+1. Chain selection.
+2. Wallet connection.
+3. Token selection.
+4. Balance retrieval.
+5. Quote retrieval.
+6. Route comparison.
+7. Price impact.
+8. Slippage.
+9. Fee estimation.
+10. Transaction simulation where supported.
+11. Transaction construction.
+12. Explicit user confirmation.
+13. Wallet signature.
+14. Broadcast.
+15. Confirmation monitoring.
+16. Transaction read-back.
+17. Explorer link.
+18. Error recovery.
+
+Use real provider data.
+
+Never invent prices, liquidity, swap routes, transaction IDs or confirmation status.
+
+Security rule: no autonomous trading, token transfers, wallet signing or financial transactions by default. Require explicit user authorization and wallet-side signature. Apply spending limits and permission controls where appropriate.
+
+13.3 Smart contract factory
+
+Support:
+
+* Contract templates.
+* Source generation.
+* Dependency analysis.
+* Static analysis.
+* Tests.
+* Security review.
+* Compilation.
+* Deployment configuration.
+* Network selection.
+* Verification where supported.
+* Deployment read-back.
+* Explorer links.
+* Version management.
+
+Never deploy contracts or spend funds without explicit authorization.
+
+⸻
+
+14. GEMINI-INSPIRED USER EXPERIENCE
+
+Create a polished, fast, intuitive AI Studio experience inspired by the usability patterns of modern AI chat applications, without copying proprietary assets, branding or protected interfaces.
+
+The interface must feel like a unified AI workspace rather than a traditional cluttered administration panel.
+
+14.1 Main workspace
+
+Include:
+
+* Sidebar navigation.
+* Main conversation workspace.
+* Prompt composer.
+* Model selector.
+* Agent team selector.
+* Attachment controls.
+* Project selector.
+* Execution status.
+* Streaming output.
+* Artifact panel.
+* Code/file viewer.
+* Preview panel.
+* Execution timeline.
+* Approval prompts.
+* History.
+
+On mobile, the experience must remain comfortable and readable.
+
+Use a compact top navigation and collapsible side menu.
+
+14.2 Prompt composer
+
+Support:
+
+* Natural-language prompts.
+* Multiline input.
+* File attachments.
+* Image attachments.
+* Supported document attachments.
+* Model selection.
+* Agent mode.
+* Project context.
+* Tool selection.
+* Send and stop.
+* Retry.
+* Edit and resubmit.
+
+The composer must submit to a real execution endpoint.
+
+14.3 AI response rendering
+
+Render:
+
+* Markdown.
+* Code blocks.
+* Syntax highlighting.
+* Tables.
+* Lists.
+* Citations.
+* Tool execution results.
+* Images.
+* Generated assets.
+* Files.
+* Downloadable artifacts.
+* Structured data.
+* Errors.
+* Progress.
+* Approval requests.
+
+Provide copy, edit, retry and relevant artifact actions.
+
+Do not replace actual code with generic static output.
+
+14.4 Cyber neon glassmorphism design system
+
+Create a consistent design system.
+
+Suggested foundation:
+
+--bg-primary: #05070B;
+--bg-secondary: #090D15;
+--surface-glass: rgba(16, 23, 37, 0.72);
+--surface-border: rgba(255, 255, 255, 0.10);
+--text-primary: #F5F7FF;
+--text-secondary: #A8B2C7;
+--neon-purple: #A855F7;
+--neon-blue: #00D9FF;
+--neon-cyan: #00F0FF;
+--neon-green: #00E887;
+--neon-red: #FF4567;
+--neon-orange: #FF8A32;
+--neon-gold: #FFD166;
+
+Create reusable components:
+
+* GlassCard.
+* FlashGlowCard.
+* NeonButton.
+* AgentStatusCard.
+* ModelProviderCard.
+* ExecutionTimeline.
+* ArtifactCard.
+* ProjectCard.
+* CodeViewer.
+* AgentGraph.
+* WorkflowCanvas.
+* StatusIndicator.
+* ApprovalDialog.
+* NotificationCenter.
+* ResponsiveNavigation.
+
+Support restrained glow, blur, depth, hover and focus effects.
+
+Use purple, red and green as prominent AI status accents, with cyan and blue for general system elements.
+
+Avoid excessive animations and visual clutter.
+
+Respect accessibility, contrast, keyboard navigation, mobile responsiveness and reduced-motion preferences.
+
+⸻
+
+15. PROJECT AND ARTIFACT MANAGEMENT
+
+Create a persistent project system.
+
+Each project includes:
+
+* Project ID.
+* Owner.
+* Tenant.
+* Name.
+* Description.
+* Type.
+* Blueprint.
+* Technology stack.
+* Files.
+* Folders.
+* Agents.
+* Executions.
+* Model assignments.
+* Integrations.
+* Assets.
+* Workflows.
+* Tests.
+* Deployment environments.
+* Versions.
+* Audit history.
+
+Users must be able to:
+
+* Create projects.
+* Open projects.
+* Rename projects.
+* Duplicate projects.
+* Archive projects.
+* Search projects.
+* Edit files.
+* Preview output.
+* Export projects.
+* Download project files.
+* Restore prior versions.
+* Continue previous executions.
+
+Ensure project data persists across sessions and devices when the platform supports authenticated persistence.
+
+⸻
+
+16. GIT, REPOSITORY AND DEVELOPMENT INTEGRATIONS
+
+Provide integration interfaces for supported Git providers:
+
+* GitHub.
+* GitLab.
+* Bitbucket.
+
+Support:
+
+* OAuth or secure token authorization.
+* Repository discovery.
+* Branch selection.
+* File synchronization.
+* Commit creation.
+* Pull requests.
+* Diff inspection.
+* Conflict resolution.
+* CI status.
+* Release tagging.
+* Rollback.
+
+Do not claim repository access without successful authorization.
+
+Do not force-push, delete branches or overwrite user changes without explicit approval.
+
+Keep repository history intact.
+
+⸻
+
+17. AUTHENTICATION, RBAC AND TENANT SECURITY
+
+Implement secure authentication and authorization.
+
+Support:
+
+* Google sign-in.
+* User registration.
+* Session management.
+* Logout.
+* Password or supported identity-provider recovery.
+* Account settings.
+* User profile.
+* Organization membership.
+* Invitations.
+* Role management.
+
+Google sign-in must use a real OAuth implementation.
+
+17.1 Super Admin
+
+Configure the initial Super Admin identity as:
+
+gxqstudio@gmail.com
+
+This identity must be provisioned through secure server-side authorization and an auditable bootstrap process.
+
+Never trust a client-side email comparison as proof of administrator privileges.
+
+Require verified identity, server-side role assignment and appropriate authentication controls.
+
+17.2 Roles
+
+Support:
+
+* Super Admin.
+* Admin.
+* Organization Owner.
+* Organization Admin.
+* Developer.
+* Agent Manager.
+* Billing Manager.
+* User.
+* Viewer.
+
+Enforce permissions in backend services and database access policies.
+
+17.3 Tenant isolation
+
+Implement tenant-aware data access.
+
+Prevent:
+
+* Cross-tenant data exposure.
+* Unauthorized project access.
+* Unauthorized file access.
+* Agent permission escalation.
+* Secret leakage.
+* Insecure direct object references.
+* Privilege escalation.
+* Unauthorized tool execution.
+
+Create security tests for each sensitive access path.
+
+⸻
+
+18. COMMERCIAL PLATFORM AND BILLING
+
+Implement subscription and payment architecture without hardcoding unverified gateway capabilities.
+
+Potential payment integrations:
+
+* Stripe.
+* PayPal.
+* Cash App Pay where supported.
+* Google Pay through an appropriate payment processor.
+* Apple Pay through an appropriate payment processor.
+* GCash through an authorized integration.
+* Other supported regional gateways.
+
+A gateway must be labeled connected only after successful configuration validation and a real provider test.
+
+Implement:
+
+* Pricing page.
+* Subscription plans.
+* Checkout.
+* Payment status.
+* Billing history.
+* Invoices.
+* Subscription upgrades.
+* Downgrades.
+* Cancellation.
+* Refund workflows where supported.
+* Webhook verification.
+* Entitlements.
+* Usage metering.
+* Quotas.
+* Admin billing reports.
+
+Never store raw card data.
+
+Use provider-hosted or tokenized payment flows.
+
+Support configurable Free, Pro, Elite and Enterprise plans, with configurable pricing, quotas and feature access.
+
+Do not enforce pricing through UI-only checks.
+
+⸻
+
+19. ADMINISTRATION AND GODS OPERATIONS CENTER
+
+Build a fully functional admin workspace.
+
+Include:
+
+Platform Overview
+
+* Users.
+* Organizations.
+* Projects.
+* Active executions.
+* Agents.
+* Models.
+* Provider health.
+* Workflows.
+* Usage.
+* Costs.
+* Errors.
+* Deployment status.
+
+Agent Operations
+
+* Capability registry.
+* Agent creation.
+* Agent versions.
+* Agent testing.
+* Agent permissions.
+* Agent deployment.
+* Agent monitoring.
+* Evaluation history.
+
+Model Operations
+
+* Provider connections.
+* Model registry.
+* Routing policies.
+* Health.
+* Usage.
+* Cost.
+* Failover.
+* Error history.
+
+Execution Operations
+
+* Active tasks.
+* Task graph.
+* Queues.
+* Agent handoffs.
+* Failures.
+* Retries.
+* Cancellation.
+* Approval requests.
+* Execution traces.
+
+Project Operations
+
+* Project management.
+* Repository connections.
+* Artifact management.
+* Deployments.
+* Test reports.
+* Audit history.
+
+Platform Administration
+
+* Users.
+* Roles.
+* Organizations.
+* Billing.
+* Feature flags.
+* Security events.
+* System settings.
+* Integration settings.
+
+Every admin action must be authorized and audited.
+
+⸻
+
+20. DATABASE AND PERSISTENCE
+
+Inspect the existing database before designing migrations.
+
+Implement a normalized, versioned schema appropriate to the existing database technology.
+
+Required logical entities include:
+
+users
+organizations
+organization_members
+roles
+permissions
+sessions
+projects
+project_members
+project_blueprints
+blueprint_versions
+project_files
+file_versions
+artifacts
+artifact_versions
+assets
+agents
+agent_versions
+agent_capabilities
+agent_permissions
+agent_evaluations
+agent_executions
+agent_assignments
+model_providers
+provider_credentials
+model_registry
+model_assignments
+provider_health
+tool_registry
+tool_permissions
+connector_connections
+tasks
+task_dependencies
+task_events
+execution_logs
+workflows
+workflow_versions
+workflow_executions
+workflow_steps
+approvals
+test_suites
+test_results
+deployments
+deployment_events
+subscriptions
+plans
+usage_records
+payment_events
+notifications
+audit_logs
+security_events
+feature_flags
+
+Define relationships, indexes, constraints, ownership, tenant isolation and retention policies.
+
+Implement migrations with backups and rollback procedures.
+
+Use transactions for operations requiring atomic consistency.
+
+Implement idempotency for payment webhooks, deployment actions, task creation and other retryable operations.
+
+Never pretend an in-memory object is persistent database storage.
+
+⸻
+
+21. BACKEND, API AND SERVICE IMPLEMENTATION
+
+Create documented, versioned APIs.
+
+Suggested API groups:
+
+/api/v1/auth/*
+/api/v1/users/*
+/api/v1/organizations/*
+/api/v1/projects/*
+/api/v1/blueprints/*
+/api/v1/files/*
+/api/v1/artifacts/*
+/api/v1/agents/*
+/api/v1/agent-factory/*
+/api/v1/orchestrator/*
+/api/v1/executions/*
+/api/v1/tasks/*
+/api/v1/models/*
+/api/v1/providers/*
+/api/v1/tools/*
+/api/v1/connectors/*
+/api/v1/workflows/*
+/api/v1/assets/*
+/api/v1/games/*
+/api/v1/web3/*
+/api/v1/wallets/*
+/api/v1/swaps/*
+/api/v1/billing/*
+/api/v1/deployments/*
+/api/v1/admin/*
+/api/v1/health/*
+
+Use request validation, typed responses, authentication, authorization, rate limiting, error handling and structured logs.
+
+Implement background job execution for long-running work.
+
+Support streaming responses where appropriate.
+
+Do not execute long-running tasks inside a request handler when a durable job system is required.
+
+Every route must connect to an actual service.
+
+Every service must use a real data or integration operation.
+
+⸻
+
+22. SECURITY AND RELIABILITY
+
+Implement:
+
+* Secure secret management.
+* Encryption where appropriate.
+* Authentication hardening.
+* Authorization checks.
+* Tenant isolation.
+* Input validation.
+* Output validation.
+* SQL injection protection.
+* XSS protection.
+* CSRF protections where applicable.
+* SSRF protections.
+* Secure file uploads.
+* File type and size restrictions.
+* Malware scanning where available.
+* Rate limits.
+* Abuse controls.
+* Audit logging.
+* Webhook signature verification.
+* Dependency vulnerability scanning.
+* Secure headers.
+* Backup and recovery.
+* Data retention.
+* Privacy controls.
+
+Treat user prompts, uploaded files, retrieved documents, webpages, generated code and tool outputs as untrusted data.
+
+Do not let retrieved content override system policies or permissions.
+
+Use isolated environments for code execution and untrusted builds.
+
+Agent-generated code must not automatically gain access to secrets or production systems.
+
+⸻
+
+23. OBSERVABILITY AND EXECUTION TRACEABILITY
+
+Every request must be traceable across the complete system.
+
+Required chain:
+
+USER PROMPT
+→ REQUIREMENT
+→ BLUEPRINT
+→ AGENT TEAM
+→ TASK GRAPH
+→ MODEL / TOOL EXECUTION
+→ SOURCE FILE / ARTIFACT
+→ INTEGRATION
+→ TEST
+→ READ-BACK
+→ APPROVAL
+→ RELEASE
+
+Implement:
+
+* Correlation IDs.
+* Execution IDs.
+* Task IDs.
+* Agent IDs.
+* Provider request IDs where available.
+* Structured logs.
+* Error traces.
+* Timing.
+* Token usage.
+* Cost estimates and actual reported usage.
+* Retry history.
+* Test evidence.
+* Deployment records.
+
+Do not log secrets or unnecessary sensitive content.
+
+Provide a user-readable execution report and an admin-level diagnostic trace.
+
+⸻
+
+24. TESTING AND QUALITY ASSURANCE
+
+Create real automated tests.
+
+Required categories:
+
+1. Unit tests.
+2. Integration tests.
+3. API tests.
+4. Database tests.
+5. Authentication tests.
+6. RBAC tests.
+7. Tenant-isolation tests.
+8. Agent orchestration tests.
+9. Agent factory tests.
+10. Provider adapter tests.
+11. Model routing tests.
+12. Tool execution tests.
+13. File and artifact tests.
+14. Workflow tests.
+15. Payment and webhook tests.
+16. Web3 integration tests.
+17. Frontend component tests.
+18. End-to-end tests.
+19. Performance tests.
+20. Security tests.
+21. Accessibility tests.
+22. Build and deployment tests.
+
+Use mocked external services only for isolated automated tests. Clearly distinguish mocked test results from real external integration verification.
+
+Mandatory acceptance scenarios
+
+Scenario A — Business application
+
+Request: Build a trucking business application.
+
+Verify:
+
+* Requirements extracted.
+* Appropriate agents assembled.
+* Project blueprint created.
+* Frontend and backend source generated.
+* Database and API implemented.
+* Tests executed.
+* Files persisted.
+* Project can be reopened.
+
+Scenario B — 3D racing game
+
+Verify:
+
+* Game specialists selected.
+* Playable game source generated.
+* Controls and physics implemented.
+* Assets linked.
+* Performance checks run.
+* Actual playable build produced where supported.
+
+Scenario C — Multi-provider AI studio
+
+Verify:
+
+* Provider adapters configured.
+* Model discovery works.
+* Real credentials are validated.
+* Model routing works.
+* Streaming works where supported.
+* Provider failure is handled.
+* Usage is recorded.
+
+Scenario D — Business automation
+
+Verify:
+
+* Workflow created.
+* Trigger configured.
+* Agents assigned.
+* Permissions enforced.
+* Workflow tested.
+* Execution history persisted.
+
+Scenario E — Web3 swap interface
+
+Verify:
+
+* Wallet connection.
+* Real quote retrieval.
+* Fee and slippage display.
+* Transaction simulation where supported.
+* Explicit signature authorization.
+* Transaction status read-back.
+* Explorer link.
+
+Scenario F — Custom agent creation
+
+Verify:
+
+* New agent generated.
+* Capability manifest saved.
+* Permissions reviewed.
+* Evaluation tests run.
+* Agent version persisted.
+* Agent can execute a real assigned task.
+
+Scenario G — Existing project modification
+
+Verify:
+
+* Existing project opened.
+* Requested change identified.
+* Relevant files modified.
+* Unrelated files preserved.
+* Tests executed.
+* Diff available.
+* Changes persisted.
+
+Scenario H — Reusable workflow
+
+Verify:
+
+* Workflow saved.
+* Workflow version created.
+* Trigger executed.
+* Tasks run.
+* Results persisted.
+* Workflow can be reused.
+
+Scenario I — Mobile experience
+
+Verify:
+
+* Responsive navigation.
+* Prompt composer.
+* Model selection.
+* Agent execution.
+* Code rendering.
+* Artifact actions.
+* Project management.
+* Accessibility and usable mobile controls.
+
+⸻
+
+25. DEPLOYMENT AND RELEASE MANAGEMENT
+
+Support development, staging and production environments.
+
+Implement:
+
+* Environment configuration.
+* Secret references.
+* Build scripts.
+* Database migrations.
+* Automated tests.
+* Deployment checks.
+* Health checks.
+* Smoke tests.
+* Rollback.
+* Release notes.
+* Version tagging.
+* Deployment history.
+
+Support compatible deployment targets such as Vercel, Docker-based hosting and VPS environments where the application architecture allows.
+
+Never report deployment success until the target confirms it and the deployed version passes health checks.
+
+Privileged production deployments require explicit authorization.
+
+⸻
+
+26. REQUIRED USER-FACING PAGES
+
+Implement all applicable pages as functional routes:
+
+1. Landing page.
+2. Sign in.
+3. Registration.
+4. Forgot password / recovery.
+5. Main AI Studio.
+6. Chat workspace.
+7. Projects.
+8. Project details.
+9. File editor.
+10. Code preview.
+11. Application builder.
+12. Game builder.
+13. AI application builder.
+14. Asset studio.
+15. Agent marketplace.
+16. Agent factory.
+17. Agent details.
+18. Agent execution monitor.
+19. Model and provider manager.
+20. Tool and connector manager.
+21. Workflow factory.
+22. Workflow editor.
+23. Workflow execution history.
+24. Web3 factory.
+25. Wallet dashboard.
+26. Billing and subscriptions.
+27. User profile.
+28. User settings.
+29. Notifications.
+30. Documentation.
+31. Help center.
+32. Admin dashboard.
+33. User administration.
+34. Organization management.
+35. Platform settings.
+36. Security and audit.
+37. System health.
+38. Error and unavailable states.
+39. Privacy policy.
+40. Terms of service.
+
+Pages must be connected to real data and actions.
+
+Do not create navigation links to nonexistent pages.
+
+Do not display fake dashboard metrics.
+
+⸻
+
+27. IMPLEMENTATION PHASES
+
+Follow these 10 controlled implementation phases.
+
+PHASE 1 — Repository Discovery
+
+Inspect files, framework, dependencies, routes, database, services, integrations, deployment and existing tests.
+
+PHASE 2 — Architecture and SSOT
+
+Create the canonical blueprint, dependency map, migration plan and implementation plan.
+
+PHASE 3 — Platform Foundation
+
+Implement authentication, authorization, database, tenant isolation, API foundation and design system.
+
+PHASE 4 — Model and Tool Infrastructure
+
+Implement provider registry, adapters, health checks, model routing and tool permissions.
+
+PHASE 5 — Dynamic Agentic Core
+
+Implement capability registry, orchestrator, dynamic team assembly, Agent Factory, collaboration, evaluation and execution tracing.
+
+PHASE 6 — Universal Factories
+
+Implement software, AI application, game, asset, workflow and Web3 factories.
+
+PHASE 7 — Workspace and Project Management
+
+Implement the Gemini-inspired workspace, project persistence, files, artifacts, preview, Git and execution history.
+
+PHASE 8 — Administration and Commercial Systems
+
+Implement admin operations, billing, subscription entitlements, usage metering and notifications.
+
+PHASE 9 — Security and Quality
+
+Implement comprehensive automated tests, security reviews, performance checks, accessibility and failure recovery.
+
+PHASE 10 — Release and Verification
+
+Run builds, migrations, tests, smoke checks, external integration verification, read-back and deployment checks. Publish the release report.
+
+Do not skip a phase silently.
+
+If a phase is blocked, record the dependency and continue with independent work.
+
+⸻
+
+28. ACCEPTANCE GATES
+
+Use these 17 release gates.
+
+1. Repository discovery completed.
+2. Existing functionality preserved.
+3. Canonical SSOT validated.
+4. Database and migrations validated.
+5. Authentication verified.
+6. RBAC and tenant isolation verified.
+7. Provider adapters validated.
+8. Model routing verified.
+9. Tool registry verified.
+10. Dynamic agent discovery verified.
+11. Agent Factory verified.
+12. Agent collaboration and task graph verified.
+13. Software, AI and game factories verified.
+14. Workflow and asset factories verified.
+15. Web3 safety and integrations verified where enabled.
+16. End-to-end, security, performance and accessibility tests passed.
+17. Deployment and production read-back verified.
+
+Use these exact status values:
+
+* VERIFIED
+* IMPLEMENTED_UNVERIFIED
+* PARTIALLY_IMPLEMENTED
+* MISSING
+* BLOCKED
+* FAILED
+* UNKNOWN
+* NOT_APPLICABLE
+
+A gate is VERIFIED only when supported by real evidence.
+
+A successful UI render is not proof of backend implementation.
+
+A successful API response is not proof of database persistence.
+
+A successful database write is not proof that an external provider completed its operation.
+
+A deployment command is not proof that the deployed application is healthy.
+
+⸻
+
+29. FINAL IMPLEMENTATION AND AUDIT REPORT
+
+At completion, produce:
+
+1. Existing repository assessment.
+2. V12 architecture.
+3. Implemented modules.
+4. Modified files.
+5. New files.
+6. Removed files and reasons.
+7. Database migrations.
+8. API routes.
+9. Provider integrations.
+10. Agent registry and agent factory.
+11. Model routing configuration.
+12. Tool and connector integrations.
+13. Frontend pages.
+14. Security controls.
+15. Automated test results.
+16. Build results.
+17. Deployment results.
+18. Known limitations.
+19. Blocked dependencies.
+20. Remaining defects.
+21. Release gate matrix.
+22. Final version and release status.
+
+For every claimed implementation, include evidence:
+
+* File path.
+* Route or service name.
+* Database entity or migration.
+* Test name and result.
+* Execution ID or provider confirmation where applicable.
+* Read-back result.
+* Deployment version where applicable.
+
+Never create fake evidence.
+
+⸻
+
+30. FINAL RELEASE DIRECTIVE
+
+Build MASTER GODS AI STUDIO V12.0.0 as one unified, dynamic, extensible production platform.
+
+The platform must be able to:
+
+* Understand practically any supported user request.
+* Dynamically assemble specialist AI teams.
+* Create new specialist agents when capabilities are missing.
+* Coordinate agents and their tasks.
+* Route work across multiple AI providers.
+* Use real tools and connectors.
+* Generate and modify complete applications.
+* Generate games and game assets.
+* Generate AI-powered applications.
+* Build reusable workflows and automations.
+* Create supported Web3 applications.
+* Generate, test and version agents.
+* Improve agent performance through controlled evaluation.
+* Manage projects, source files and artifacts.
+* Integrate with Git and supported deployment platforms.
+* Provide a polished mobile-first AI Studio.
+* Secure user data and privileged operations.
+* Maintain full execution traceability.
+* Verify work before claiming completion.
+
+Do not stop after building the homepage.
+
+Do not stop after building the dashboard.
+
+Do not stop after generating static source files.
+
+Do not stop after connecting a provider configuration form.
+
+Do not stop after creating an agent registry without executable agents.
+
+Do not stop after generating a workflow diagram without a working execution engine.
+
+Do not stop after producing code without testing it.
+
+Do not stop after passing local tests without checking the relevant integration and deployment boundaries.
+
+Inspect → Plan → Implement → Integrate → Execute → Test → Repair → Read Back → Verify → Release.
+
+If the environment cannot support a requested capability, identify the limitation precisely and implement the strongest safe, working alternative without pretending the original capability is complete.
+
+FINAL OBJECTIVE: ONE MASTER GODS AI STUDIO. ONE CANONICAL BLUEPRINT. ONE DYNAMIC AGENTIC INTELLIGENCE ENGINE. REAL PROVIDERS. REAL TOOLS. REAL PROJECTS. REAL EXECUTION. REAL VERIFICATION. PRODUCTION-READY DELIVERY.
+
+VERSION: MASTER GODS AI STUDIO V12.0.0

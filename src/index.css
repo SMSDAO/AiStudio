@@ -1,0 +1,322 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-display: 'Orbitron', 'Plus Jakarta Sans', sans-serif;
+
+    /* Master Gods v10.3.0 Design Tokens */
+    --gods-background: #05070B;
+    --gods-surface: #0B1019;
+    --gods-glass: rgba(18, 25, 39, 0.72);
+    --gods-glass-strong: rgba(12, 17, 28, 0.90);
+    --neon-purple: #A855F7;
+    --neon-orange: #F97316;
+    --neon-red: #EF4444;
+    --neon-green: #22C55E;
+    --neon-yellow: #EAB308;
+    --neon-cyan: #06B6D4;
+    --neon-blue: #3B82F6;
+    --text-primary: #F8FAFC;
+    --text-secondary: #A1AEC0;
+    --text-muted: #64748B;
+    --glass-border: rgba(148, 163, 184, 0.16);
+    --glass-blur: 18px;
+    --radius-sm: 12px;
+    --radius-md: 18px;
+    --radius-lg: 24px;
+    --radius-xl: 30px;
+
+    /* Legacy compatibility */
+    --color-purple: #A020F0;
+    --color-red: #FF2A55;
+    --color-blue: #3A8DFF;
+    --color-green: #00FF9D;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--gods-background, #05070B);
+    color: var(--text-primary, #F8FAFC);
+    -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Glassmorphism Cards: Blur 20-30px, Soft Neon Edges */
+.glass-card {
+  background: rgba(13, 17, 34, 0.72);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.75), 0 0 1px 1px rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(160, 32, 240, 0.3);
+  box-shadow: 0 16px 45px -10px rgba(0, 0, 0, 0.85), 0 0 25px rgba(160, 32, 240, 0.2);
+}
+
+.glass-modal {
+  background: rgba(10, 14, 28, 0.88);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid rgba(160, 32, 240, 0.35);
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.9), 0 0 30px rgba(58, 141, 255, 0.25);
+  border-radius: 18px;
+}
+
+/* AI Studio Button Rules: Rounded 12px, Glow on hover, Gradient border (purple -> blue) */
+.btn-enterprise {
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(160, 32, 240, 0.15), rgba(58, 141, 255, 0.15));
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.btn-enterprise::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #A020F0, #3A8DFF);
+  z-index: -1;
+  opacity: 0.6;
+  transition: opacity 0.25s ease;
+}
+
+.btn-enterprise:hover::before {
+  opacity: 1;
+  box-shadow: 0 0 18px rgba(160, 32, 240, 0.5), 0 0 24px rgba(58, 141, 255, 0.4);
+}
+
+.btn-enterprise:hover {
+  transform: translateY(-1px);
+}
+
+/* Primary Glow Gradients & Pulsing Glow for Centered Prompt Box */
+@keyframes promptPulse {
+  0% {
+    transform: scale(0.98);
+    opacity: 0.55;
+    filter: blur(35px);
+  }
+  50% {
+    transform: scale(1.02);
+    opacity: 0.75;
+    filter: blur(48px);
+  }
+  100% {
+    transform: scale(0.98);
+    opacity: 0.55;
+    filter: blur(35px);
+  }
+}
+
+.prompt-glow-backdrop {
+  background: linear-gradient(
+    135deg,
+    #A020F0 0%,
+    #FF2A55 35%,
+    #3A8DFF 70%,
+    #00FF9D 100%
+  );
+  animation: promptPulse 4.5s ease-in-out infinite;
+}
+
+/* Prompt box styling */
+.prompt-box-container {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 16px;
+  background: rgba(13, 17, 34, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 
+    0 10px 40px -5px rgba(0, 0, 0, 0.7),
+    0 0 25px rgba(160, 32, 240, 0.25),
+    0 0 40px rgba(58, 141, 255, 0.15);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.prompt-box-container:focus-within {
+  border-color: rgba(160, 32, 240, 0.6);
+  box-shadow: 
+    0 15px 50px -5px rgba(0, 0, 0, 0.8),
+    0 0 35px rgba(160, 32, 240, 0.4),
+    0 0 45px rgba(255, 42, 85, 0.25);
+}
+
+/* Response Colored Code Blocks */
+/* JS -> yellow */
+.code-block-js {
+  border: 1px solid rgba(234, 179, 8, 0.4);
+  background: rgba(18, 18, 12, 0.8);
+  box-shadow: 0 0 15px rgba(234, 179, 8, 0.08);
+}
+.code-badge-js {
+  background: rgba(234, 179, 8, 0.15);
+  color: #facc15;
+  border: 1px solid rgba(234, 179, 8, 0.3);
+}
+
+/* Python -> blue */
+.code-block-python {
+  border: 1px solid rgba(58, 141, 255, 0.4);
+  background: rgba(10, 16, 30, 0.8);
+  box-shadow: 0 0 15px rgba(58, 141, 255, 0.08);
+}
+.code-badge-python {
+  background: rgba(58, 141, 255, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(58, 141, 255, 0.3);
+}
+
+/* Solidity -> green */
+.code-block-solidity {
+  border: 1px solid rgba(0, 255, 157, 0.4);
+  background: rgba(8, 22, 16, 0.8);
+  box-shadow: 0 0 15px rgba(0, 255, 157, 0.08);
+}
+.code-badge-solidity {
+  background: rgba(0, 255, 157, 0.15);
+  color: #00FF9D;
+  border: 1px solid rgba(0, 255, 157, 0.3);
+}
+
+/* Bash -> red */
+.code-block-bash {
+  border: 1px solid rgba(255, 42, 85, 0.4);
+  background: rgba(24, 10, 14, 0.8);
+  box-shadow: 0 0 15px rgba(255, 42, 85, 0.08);
+}
+.code-badge-bash {
+  background: rgba(255, 42, 85, 0.15);
+  color: #FF2A55;
+  border: 1px solid rgba(255, 42, 85, 0.3);
+}
+
+/* Flash line animations in 4 core colors + orange/yellow */
+.flash-line-purple {
+  background: #A020F0;
+  box-shadow: 0 0 10px #A020F0, 0 0 20px rgba(160, 32, 240, 0.5);
+}
+.flash-line-red {
+  background: #FF2A55;
+  box-shadow: 0 0 10px #FF2A55, 0 0 20px rgba(255, 42, 85, 0.5);
+}
+.flash-line-blue {
+  background: #3A8DFF;
+  box-shadow: 0 0 10px #3A8DFF, 0 0 20px rgba(58, 141, 255, 0.5);
+}
+.flash-line-green {
+  background: #00FF9D;
+  box-shadow: 0 0 10px #00FF9D, 0 0 20px rgba(0, 255, 157, 0.5);
+}
+.flash-line-orange {
+  background: #f97316;
+  box-shadow: 0 0 10px #f97316, 0 0 20px rgba(249, 115, 22, 0.5);
+}
+.flash-line-yellow {
+  background: #eab308;
+  box-shadow: 0 0 10px #eab308, 0 0 20px rgba(234, 179, 8, 0.5);
+}
+
+/* Background Cyber Grid */
+.cyber-grid {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(7, 9, 19, 0.9);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(160, 32, 240, 0.6);
+}
+
+/* Master Gods Cyber Neon Animations */
+@keyframes lightSweep {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(250%) skewX(-20deg);
+    opacity: 0;
+  }
+}
+
+@keyframes neonBorderPulse {
+  0%, 100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+@keyframes neonGlowBreathe {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.995);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(1.005);
+  }
+}
+
+.animate-light-sweep {
+  animation: lightSweep 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-neon-pulse {
+  animation: neonBorderPulse 3.5s ease-in-out infinite;
+}
+
+.animate-neon-breathe {
+  animation: neonGlowBreathe 4s ease-in-out infinite;
+}
+
+/* Reduced Motion Fallback */
+@media (prefers-reduced-motion: reduce) {
+  .animate-light-sweep,
+  .animate-neon-pulse,
+  .animate-neon-breathe,
+  .prompt-glow-backdrop {
+    animation: none !important;
+    transition: none !important;
+  }
+}

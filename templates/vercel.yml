@@ -1,0 +1,23 @@
+# Vercel Deployment & Build Configuration for AI Studio Miniapps
+version: 2
+buildCommand: npm run build
+outputDirectory: dist
+framework: vite
+installCommand: npm install
+regions:
+  - iad1
+  - sfo1
+headers:
+  - source: /(.*)
+    headers:
+      - key: X-Content-Type-Options
+        value: nosniff
+      - key: X-Frame-Options
+        value: ALLOWALL
+      - key: Access-Control-Allow-Origin
+        value: '*'
+      - key: Content-Security-Policy
+        value: "frame-ancestors 'self' https://warpcast.com https://*.farcaster.xyz https://web.telegram.org https://worldcoin.org;"
+env:
+  NODE_ENV: production
+  NEXT_PUBLIC_BASE_CHAIN_ID: "8453"

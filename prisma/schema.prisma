@@ -1,0 +1,301 @@
+// Prisma Schema for ViniApp 2.0.0 (Enterprise Full-Clone)
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  PLATFORM_SUPER_ADMIN
+  ORG_OWNER
+  ORG_ADMIN
+  APP_OWNER
+  BUILDER
+  VIEWER
+}
+
+enum GranularPermission {
+  CREATE_APP
+  DEPLOY_APP
+  MANAGE_BILLING
+  VIEW_ANALYTICS
+  CLAIM_FEES
+  MANAGE_TEAM
+  EDIT_CODE
+  MANAGE_TEMPLATES
+  FEATURE_APP
+  VIEW_FEEDBACK
+  MANAGE_ONBOARDING
+}
+
+enum BuildStatus {
+  QUEUED
+  CLARIFYING
+  GENERATING
+  CREATING_WALLET
+  DEPLOYING
+  LIVE
+  FAILED
+}
+
+enum AppType {
+  ARCADE
+  TIPPING
+  MEME
+  CASINO
+  PREDICTION
+  BLOG
+  POLL
+  NFT_GALLERY
+  CALENDAR
+  AI_AGENT
+  CUSTOM
+}
+
+model User {
+  id                  String               @id @default(uuid())
+  address             String               @unique
+  name                String?
+  username            String?              @unique
+  handle              String?
+  avatarUrl           String?
+  bio                 String?              @db.Text
+  twitterHandle       String?
+  twitterVerified     Boolean              @default(false)
+  role                UserRole             @default(APP_OWNER)
+  creditBalance       Int                  @default(50)
+  onboardingCompleted Boolean              @default(false)
+  createdAt           DateTime             @default(now())
+  updatedAt           DateTime             @updatedAt
+
+  profile             UserProfile?
+  farcasterConnection FarcasterConnection?
+  workspaces          WorkspaceMember[]
+  apps                App[]
+  creditTxs           CreditTransaction[]
+  feedbacks           AppFeedback[]
+  auditLogs           AuditLog[]
+  collaborations      CollaborationPresence[]
+
+  @@index([address])
+  @@index([username])
+}
+
+model UserProfile {
+  id          String   @id @default(uuid())
+  userId      String   @unique
+  username    String   @unique
+  name        String
+  bio         String?  @db.Text
+  avatarUrl   String?
+  socialLinks Json?    // twitter, farcaster, website, github
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model FarcasterConnection {
+  id           String   @id @default(uuid())
+  userId       String   @unique
+  fid          Int
+  username     String?
+  custodyAddr  String?
+  verifiedAt   DateTime @default(now())
+  syncedHub    String   @default("hub-grpc.pinata.cloud")
+
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Workspace {
+  id          String            @id @default(uuid())
+  name        String
+  slug        String            @unique
+  plan        String            @default("pro")
+  createdAt   DateTime          @default(now())
+
+  members     WorkspaceMember[]
+  apps        App[]
+}
+
+model WorkspaceMember {
+  id          String     @id @default(uuid())
+  workspaceId String
+  userId      String
+  role        UserRole   @default(BUILDER)
+
+  workspace   Workspace  @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  user        User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([workspaceId, userId])
+}
+
+model App {
+  id                 String             @id @default(uuid())
+  workspaceId        String?
+  ownerId            String
+  name               String
+  slug               String             @unique
+  tagline            String?
+  description        String             @db.Text
+  type               AppType            @default(CUSTOM)
+  category           String             @default("General")
+  featured           Boolean            @default(false)
+  status             BuildStatus        @default(LIVE)
+  accentColor        String             @default("#a855f7")
+  neonBorderColor    String             @default("purple")
+  
+  // Deployment metadata
+  vercelProjectId    String?
+  vercelDeployUrl    String?
+  githubRepoUrl      String?
+  farcasterManifest  Json?
+  
+  // Files snapshot (JSON of filename -> code content)
+  filesSnapshot      Json?
+
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
+
+  owner              User               @relation(fields: [ownerId], references: [id])
+  workspace          Workspace?         @relation(fields: [workspaceId], references: [id])
+  wallet             AppWallet?
+  token              AppToken?
+  buildJobs          BuildJob[]
+  conversations      Conversation[]
+  feedbacks          AppFeedback[]
+
+  @@index([ownerId])
+  @@index([slug])
+}
+
+model AppWallet {
+  id                  String   @id @default(uuid())
+  appId               String   @unique
+  address             String   @unique
+  network             String   @default("base")
+  ethBalance          Float    @default(0.0)
+  usdcBalance         Float    @default(0.0)
+  unclaimedFeesEth    Float    @default(0.0)
+  totalFeesClaimedEth Float    @default(0.0)
+  encryptedPrivateKey String?  @db.Text
+  createdAt           DateTime @default(now())
+
+  app                 App      @relation(fields: [appId], references: [id], onDelete: Cascade)
+}
+
+model AppToken {
+  id                    String   @id @default(uuid())
+  appId                 String   @unique
+  name                  String
+  symbol                String   @unique
+  contractAddress       String   @unique
+  priceUsd              Float    @default(0.01)
+  marketCapUsd          Float    @default(100000.0)
+  volume24hUsd          Float    @default(0.0)
+  totalSupply           Float    @default(10000000.0)
+  creatorFeePercentage  Float    @default(60.0) // 60% fee sharing
+  totalFeesGeneratedUsd Float    @default(0.0)
+  creatorFeesAccruedUsd Float    @default(0.0)
+  holdersCount          Int      @default(1)
+  createdAt             DateTime @default(now())
+
+  app                   App      @relation(fields: [appId], references: [id], onDelete: Cascade)
+}
+
+model AppTemplate {
+  id                 String   @id @default(uuid())
+  title              String
+  slug               String   @unique
+  icon               String
+  tagline            String
+  description        String   @db.Text
+  type               AppType  @default(CUSTOM)
+  suggestedFeatures  Json?
+  suggestedPlatforms Json?
+  monetizationModel  String
+  previewColor       String   @default("#a855f7")
+  neonGlow           String   @default("purple")
+  codePreset         Json?
+  createdAt          DateTime @default(now())
+}
+
+model AppFeedback {
+  id        String   @id @default(uuid())
+  appId     String
+  userId    String
+  rating    Int      @default(5)
+  comment   String   @db.Text
+  createdAt DateTime @default(now())
+
+  app       App      @relation(fields: [appId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([appId])
+}
+
+model BuildJob {
+  id               String      @id @default(uuid())
+  appId            String
+  status           BuildStatus @default(QUEUED)
+  progressPercent  Int         @default(0)
+  estimatedSeconds Int         @default(12)
+  logs             Json?
+  steps            Json?
+  startedAt        DateTime    @default(now())
+  completedAt      DateTime?
+
+  app              App         @relation(fields: [appId], references: [id], onDelete: Cascade)
+}
+
+model CollaborationPresence {
+  id           String   @id @default(uuid())
+  workspaceId  String
+  userId       String
+  status       String   @default("active") // active, idle, typing
+  currentField String?
+  cursorColor  String   @default("#06b6d4")
+  updatedAt    DateTime @updatedAt
+
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([workspaceId, userId])
+}
+
+model Conversation {
+  id        String   @id @default(uuid())
+  appId     String
+  messages  Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  app       App      @relation(fields: [appId], references: [id], onDelete: Cascade)
+}
+
+model CreditTransaction {
+  id          String   @id @default(uuid())
+  userId      String
+  amount      Int
+  type        String // 'purchase' | 'burn' | 'bonus'
+  description String
+  createdAt   DateTime @default(now())
+
+  user        User     @relation(fields: [userId], references: [id])
+}
+
+model AuditLog {
+  id        String   @id @default(uuid())
+  userId    String?
+  action    String
+  target    String
+  status    String   @default("SUCCESS")
+  txHash    String?
+  ipAddress String?
+  createdAt DateTime @default(now())
+
+  user      User?    @relation(fields: [userId], references: [id])
+}

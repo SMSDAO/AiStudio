@@ -1,0 +1,1085 @@
+MASTER GODS AI STUDIO V13.0.0
+
+AUTONOMOUS ENTERPRISE BUILD SYSTEM
+
+20 AGENTS • INTELLIGENT FAILOVER • LIVE PREVIEW • COMPLETE ARTIFACTS • TWO-WAY GITHUB SYNC
+
+RELEASE: V13.0.0
+PREVIOUS BASELINE: MASTER GODS V12.0.0
+IMPLEMENTATION: EXISTING APPLICATION AND REPOSITORY
+MODE: PRODUCTION IMPLEMENTATION, INTEGRATION, TESTING AND VERIFICATION
+
+⸻
+
+1. MISSION — ONE REQUEST TO COMPLETE PRODUCTION APPLICATION
+
+Upgrade the existing MASTER GODS AI STUDIO V12.0.0 into V13.0.0.
+
+GODS must operate as a universal enterprise AI development studio.
+
+A user should be able to submit ONE natural-language request and have GODS:
+
+1. Understand the request.
+2. Extract complete requirements.
+3. Design the application or game.
+4. Dynamically assemble specialist agents.
+5. Select the best available AI models.
+6. Fail over when a provider or agent cannot complete a task.
+7. Generate the complete project architecture.
+8. Generate all required source files.
+9. Create the frontend and backend.
+10. Create database schemas and migrations.
+11. Generate and integrate assets.
+12. Implement real application functionality.
+13. Run the build.
+14. Preview the actual application or game.
+15. Detect and repair defects.
+16. Package all project files.
+17. Generate a downloadable ZIP.
+18. Connect and synchronize the project with GitHub.
+19. Verify all generated files and operations.
+20. Deliver a complete production report.
+
+The user must not have to manually assemble dozens of disconnected pieces.
+
+One request → intelligent planning → dynamic agents → complete project → live preview → tests → ZIP → GitHub → verified delivery.
+
+Do not replace V12 with a separate application. Upgrade the existing architecture and preserve working functionality.
+
+2. RESPONSE INTELLIGENCE — PROFESSIONAL AI OUTPUT
+
+All AI responses must use a structured, professional, enterprise-quality response renderer.
+
+Do not return unformatted walls of text, generic chatbot responses or unorganized code.
+
+Response types
+
+Automatically identify and render:
+
+* General answers.
+* Technical explanations.
+* Implementation plans.
+* Application specifications.
+* Game specifications.
+* Architecture documents.
+* Source code.
+* File creation results.
+* File modification results.
+* Agent execution reports.
+* Build logs.
+* Test reports.
+* Error reports.
+* Research reports.
+* Workflow definitions.
+* API documentation.
+* Database schemas.
+* Deployment reports.
+* Security reports.
+* Generated assets.
+* Downloadable artifacts.
+
+Markdown rendering
+
+Implement complete Markdown support:
+
+* H1–H6 headings.
+* Paragraphs.
+* Bold and italic.
+* Ordered and unordered lists.
+* Nested lists.
+* Tables.
+* Blockquotes.
+* Links.
+* Images.
+* Inline code.
+* Fenced code blocks.
+* Syntax highlighting.
+* Language labels.
+* Task checklists.
+* Mathematical expressions where supported.
+* Mermaid diagrams where supported.
+* Collapsible sections where useful.
+
+Code blocks
+
+Every code block must support:
+
+* Copy.
+* Edit.
+* Expand.
+* Collapse.
+* Language detection.
+* Line numbers.
+* Download.
+* Save as a project file.
+* Replace or update an existing project file.
+* Open in the full code editor.
+
+Never display generated code as plain uneditable chat text when it should be a project artifact.
+
+AI response actions
+
+Provide context-aware actions:
+
+* Copy response.
+* Edit prompt.
+* Regenerate.
+* Continue.
+* Explain.
+* Improve.
+* Save to project.
+* Convert to Markdown.
+* Create files from response.
+* Download.
+* Open associated project.
+* View agent execution details.
+
+Every action must perform its advertised operation.
+
+3. THE COMPLETE 20-AGENT SYSTEM
+
+Retain all 20 operational specialist agents from V12.
+
+They must run through a persistent background execution system.
+
+The orchestrator must dynamically select, activate and coordinate them based on the user’s request.
+
+Required core agents:
+
+1. Master Orchestrator.
+2. Requirements Intelligence.
+3. System Architect.
+4. UI/UX Designer.
+5. Frontend Engineer.
+6. Backend Engineer.
+7. Database Engineer.
+8. AI Model Integration Engineer.
+9. Dynamic Agent Factory.
+10. Code Generation Engineer.
+11. Game Development Engineer.
+12. Asset Generation Engineer.
+13. Workflow Automation Engineer.
+14. Web3 Blockchain Engineer.
+15. Security Engineer.
+16. QA and Testing Engineer.
+17. Code Review and Repair Engineer.
+18. Performance and Accessibility Engineer.
+19. DevOps and Deployment Engineer.
+20. Independent Verification Engineer.
+
+Required behavior
+
+Each agent must have:
+
+* Unique identity.
+* Versioned instructions.
+* Capability manifest.
+* Task input and output schemas.
+* Available tools.
+* Permission policies.
+* Model assignments.
+* Execution history.
+* Evaluation results.
+* Error handling.
+* Persistent status.
+
+All 20 agents must be registered, configured, testable and executable.
+
+The orchestrator must activate relevant agents in parallel when tasks are independent.
+
+Do not waste resources by calling every agent for every task.
+
+All agents must remain available to background execution and project orchestration.
+
+Agents must be able to delegate work, exchange structured artifacts, review each other’s results and report completion to the orchestrator.
+
+Do not simulate agent execution through decorative status indicators.
+
+4. INTELLIGENT AGENT AND MODEL FAILOVER ENGINE
+
+This is a critical V13 upgrade.
+
+GODS must dynamically select the best available agent, model and provider for each task.
+
+Do not rely on a single model or one permanent provider.
+
+Provider support
+
+Implement adapters for supported services such as:
+
+* OpenAI.
+* Google Gemini.
+* Anthropic Claude.
+* DeepSeek.
+* Azure AI services.
+* OpenAI-compatible APIs.
+* Ollama and compatible local models.
+* Additional providers through the adapter SDK.
+
+Discover actual available models from provider APIs where supported.
+
+Never invent model identifiers or claim that an unavailable model is connected.
+
+Dynamic task routing
+
+For each task, evaluate:
+
+* Required knowledge.
+* Reasoning difficulty.
+* Coding capability.
+* Software architecture experience.
+* Game development capability.
+* Multimodal capability.
+* Context window.
+* Tool calling.
+* Structured output.
+* Provider health.
+* Latency.
+* Cost.
+* Reliability.
+* Rate limits.
+* User-selected provider restrictions.
+* Data privacy requirements.
+
+Select the best eligible model and agent combination.
+
+Failover sequence
+
+Implement:
+
+PRIMARY AGENT / MODEL
+↓
+TASK VALIDATION
+↓
+FAILURE OR QUALITY CHECK
+↓
+ALTERNATIVE MODEL SELECTION
+↓
+ALTERNATIVE SPECIALIST AGENT
+↓
+RETRY OR TASK REASSIGNMENT
+↓
+INDEPENDENT REVIEW
+↓
+RESULT VALIDATION
+↓
+ORCHESTRATOR ACCEPTANCE
+
+Failover must support:
+
+* Provider timeout.
+* Rate limiting.
+* Provider outage.
+* Invalid response.
+* Malformed structured output.
+* Unsupported capability.
+* Context overflow.
+* Tool execution failure.
+* Agent execution failure.
+* Insufficient quality.
+* Failed code tests.
+
+Use bounded retries, exponential backoff, circuit breakers, task deadlines and cost budgets.
+
+Do not retry unsafe or non-idempotent operations blindly.
+
+Knowledge quality and independent review
+
+When building complex apps or games:
+
+* Use multiple specialist perspectives where beneficial.
+* Consult additional providers when the primary model cannot answer reliably.
+* Validate framework and API assumptions against authoritative documentation where available.
+* Cross-check important architectural decisions.
+* Require QA to execute tests rather than simply agree with generated code.
+* Record model and provider provenance for every important task.
+* Preserve the user’s chosen provider and data policy.
+* Explain unresolved disagreements rather than hiding them.
+
+A failover must not silently transmit private project data to a provider that the user has not authorized.
+
+Implement a configurable model routing dashboard with manual override and automatic routing.
+
+5. FULL ENTERPRISE PROJECT DASHBOARD
+
+Create one central development workspace.
+
+Required layout:
+
+LEFT PANEL:
+
+* Project explorer.
+* Directory tree.
+* Search files.
+* Agents.
+* Assets.
+* Workflows.
+* Git branches.
+
+CENTER PANEL:
+
+* AI conversation.
+* Structured responses.
+* Markdown documents.
+* Code editor.
+* File editor.
+* Project configuration.
+
+RIGHT PANEL:
+
+* Live application preview.
+* Game preview.
+* Build status.
+* Console.
+* Diagnostics.
+* Device viewport controls.
+
+BOTTOM PANEL:
+
+* Terminal or supported build output.
+* Agent task execution.
+* Build logs.
+* Test results.
+* Git operations.
+* Error reports.
+
+Mobile must have an optimized responsive version with collapsible panels and accessible controls.
+
+Do not make the interface unusable by squeezing the entire desktop layout onto a phone.
+
+6. FULL PROJECT FILE EXPLORER AND DIRECTORY TREE
+
+Implement a real interactive project tree.
+
+Example:
+
+my-project/
+├── frontend/
+│   ├── app/
+│   ├── components/
+│   ├── hooks/
+│   ├── services/
+│   ├── styles/
+│   └── assets/
+├── backend/
+│   ├── api/
+│   ├── services/
+│   ├── middleware/
+│   └── workers/
+├── database/
+│   ├── schema/
+│   ├── migrations/
+│   └── seeds/
+├── public/
+├── tests/
+├── docs/
+├── config/
+├── scripts/
+├── package.json
+├── README.md
+├── .env.example
+└── project configuration files
+
+This is an illustrative structure. Actual project trees must adapt to the user’s requested technology and application.
+
+File operations
+
+Users must be able to:
+
+* Expand and collapse folders.
+* Open files.
+* Create files.
+* Generate new files with AI.
+* Generate entire folders.
+* Edit files.
+* Save files.
+* Rename files.
+* Duplicate files.
+* Move files.
+* Delete files.
+* Restore previous versions.
+* Search files.
+* Compare versions.
+* Copy content.
+* Download individual files.
+* Upload modified files.
+* Select multiple files.
+* Download selected files.
+* Download complete projects.
+
+All operations must update actual project storage.
+
+AI file generation
+
+Users can ask:
+
+“Create an authentication service.”
+
+GODS must create the appropriate real file, connect it to relevant modules, update imports, update tests and validate the implementation.
+
+Users can ask:
+
+“Improve the mobile dashboard.”
+
+GODS must inspect the actual project and modify the relevant existing files instead of creating an unrelated demonstration.
+
+Require diff review and preserve unrelated changes.
+
+7. FULL CODE AND MARKDOWN EDITOR
+
+Implement an enterprise-grade editor using Monaco, CodeMirror or a suitable equivalent.
+
+Support:
+
+* TypeScript.
+* JavaScript.
+* React.
+* HTML.
+* CSS.
+* JSON.
+* YAML.
+* Markdown.
+* SQL.
+* Python.
+* PHP.
+* Solidity.
+* Rust.
+* Configuration files.
+* Other supported languages.
+
+Features:
+
+* Syntax highlighting.
+* Line numbers.
+* Code folding.
+* Search and replace.
+* Formatting.
+* Diagnostics.
+* Multiple tabs.
+* Unsaved indicators.
+* Autosave.
+* Manual save.
+* Undo and redo.
+* Diff viewer.
+* File history.
+* Copy.
+* Download.
+* AI editing.
+* AI explanation.
+* AI repair.
+
+Markdown editor
+
+Support source and preview modes, including:
+
+* Side-by-side view.
+* Tables.
+* Nested lists.
+* Code blocks.
+* Diagrams.
+* Links.
+* Images.
+* Checklists.
+* Export.
+
+Users must be able to edit the complete Markdown document and save it as a real .md file.
+
+8. COMPLETE ARTIFACT MANAGEMENT AND ZIP EXPORT
+
+Every generated project and asset must be a real persistent artifact.
+
+Implement:
+
+* Artifact registry.
+* Artifact versions.
+* File references.
+* Project relationships.
+* Metadata.
+* Storage locations.
+* Access control.
+* Download endpoints.
+* Export history.
+
+Complete ZIP export
+
+Users can download:
+
+* Entire project.
+* Selected folders.
+* Selected files.
+* Source code.
+* Documentation.
+* Assets.
+* Database migrations.
+* Tests.
+* Configuration.
+* Build instructions.
+
+The ZIP must contain the actual current files and directory structure.
+
+Exclude:
+
+* Secret environment files.
+* API keys.
+* Private keys.
+* Access tokens.
+* Production credentials.
+
+Validate archives before delivery.
+
+Support safe project ZIP import, extraction and restoration.
+
+Prevent path traversal, archive bombs, unauthorized overwrites and unsafe file types.
+
+Verify the generated archive can be opened and its contents match the selected project version.
+
+Never provide a fake download link.
+
+9. REAL APP AND GAME BUILD DASHBOARDS
+
+Create two dedicated build experiences.
+
+Application Builder
+
+Show:
+
+* Application preview.
+* Desktop viewport.
+* Tablet viewport.
+* Mobile viewport.
+* Component preview.
+* Page navigation.
+* Build status.
+* Console.
+* Diagnostics.
+* Source files.
+* Backend health.
+* API results.
+* Database status.
+* Test results.
+* Artifact downloads.
+
+Game Builder
+
+Show:
+
+* Playable game preview.
+* Game viewport.
+* Supported 2D/3D renderer.
+* Scene and asset explorer.
+* Game controls.
+* FPS and performance information.
+* Physics diagnostics where supported.
+* Console.
+* Build status.
+* Game assets.
+* Source code.
+* Test results.
+* Export options.
+
+Preview controls
+
+* Run.
+* Stop.
+* Restart.
+* Refresh.
+* Inspect.
+* Open separately.
+* Change viewport.
+* View errors.
+* View logs.
+* Switch to code.
+* Rebuild.
+* Download.
+
+Device frames must control the actual preview viewport.
+
+The preview must run the current generated project, not a static image or unrelated sample application.
+
+For games, provide actual interactive gameplay where the selected engine and runtime support it.
+
+10. TWO-WAY GITHUB INTEGRATION
+
+This is a mandatory V13 core feature.
+
+Users must be able to authenticate with GitHub and connect their repositories.
+
+Implement GitHub OAuth or GitHub App authentication using the appropriate supported GitHub authorization flow.
+
+Do not require users to paste a personal access token as the default authentication experience.
+
+GitHub login
+
+Provide:
+
+* Continue with GitHub.
+* Secure OAuth callback.
+* Session handling.
+* Repository permission review.
+* Connected account information.
+* Disconnect.
+* Reauthorization.
+* Token revocation where supported.
+
+Request the minimum repository permissions needed for the selected operations.
+
+Use server-side token storage and secure encryption.
+
+Never expose OAuth secrets or installation tokens to browser JavaScript.
+
+Repository connection
+
+Users must be able to:
+
+1. Sign in with GitHub.
+2. Select an existing repository.
+3. Select an organization or personal account where authorized.
+4. Create a new repository when authorized.
+5. Select a branch.
+6. Connect the GODS project.
+7. Import repository files.
+8. Continue editing inside GODS.
+9. Push GODS changes to GitHub.
+10. Pull GitHub changes into GODS.
+
+TRUE TWO-WAY SYNCHRONIZATION
+
+Implement both directions.
+
+GODS → GITHUB
+
+* Detect changed files.
+* Show a diff.
+* Allow commit messages.
+* Select target branch.
+* Commit changes.
+* Push through authorized GitHub operations.
+* Record commit SHA.
+* Verify the commit by reading the repository back.
+
+GITHUB → GODS
+
+* Detect new commits.
+* Fetch branch changes.
+* Import new files.
+* Update modified files.
+* Detect deletions.
+* Present conflict resolution.
+* Apply authorized updates.
+* Verify project files after synchronization.
+
+Support:
+
+* Repository status.
+* Branch listing.
+* Branch switching.
+* Commit history.
+* Diff viewer.
+* Pull requests where supported.
+* Merge status.
+* Conflict resolution.
+* Sync history.
+* Last synced commit.
+* Manual synchronization.
+* Optional controlled background synchronization.
+
+Conflict protection
+
+Never silently overwrite user changes.
+
+Track:
+
+* Local project version.
+* Remote commit SHA.
+* Last synchronized base version.
+* Changed file hashes.
+* Pending local changes.
+* Pending remote changes.
+
+When the same file changes on both sides:
+
+1. Detect the conflict.
+2. Display the diff.
+3. Offer keep local, keep remote or manually merge.
+4. Require confirmation for destructive resolution.
+5. Save the resolution.
+6. Verify the synchronized result.
+
+Use safe commits and branch protection.
+
+Never force-push by default.
+
+GitHub dashboard
+
+Display:
+
+* Connected GitHub account.
+* Repository.
+* Branch.
+* Last commit.
+* Sync status.
+* Local changes.
+* Remote changes.
+* Conflicts.
+* Commit history.
+* Pull requests.
+* Sync errors.
+
+A repository is not connected merely because the user entered its URL. Verify OAuth authorization and actual repository access.
+
+11. SINGLE-REQUEST COMPLETE PROJECT GENERATION
+
+A user must be able to enter one prompt such as:
+
+“Build a production-ready futuristic multiplayer racing game with a mobile-first interface, 3D environment, vehicle customization, user accounts, database, quests, leaderboard, sound effects, admin dashboard, and GitHub integration.”
+
+GODS must dynamically:
+
+1. Parse the request.
+2. Produce requirements.
+3. Create the project blueprint.
+4. Assemble specialist agents.
+5. Select models and tools.
+6. Create the task graph.
+7. Generate project directories.
+8. Generate all required source files.
+9. Generate or integrate assets.
+10. Implement backend functionality.
+11. Implement database persistence.
+12. Implement authentication.
+13. Implement frontend and responsive design.
+14. Implement game mechanics or business logic.
+15. Integrate supported external services.
+16. Build the project.
+17. Run tests.
+18. Repair defects.
+19. Launch the actual preview.
+20. Generate a complete ZIP.
+21. Connect and synchronize with GitHub when authorized.
+22. Run independent verification.
+23. Produce the final implementation report.
+
+The generated project must reflect the actual user request.
+
+Do not force every project into the same generic template.
+
+12. BACKGROUND EXECUTION AND RECOVERY
+
+Implement durable background jobs.
+
+Every project build must continue independently of the browser tab being open.
+
+Support:
+
+* Queue.
+* Running.
+* Agent assignment.
+* Parallel execution.
+* Sequential dependencies.
+* Progress.
+* Pause.
+* Resume.
+* Retry.
+* Cancel.
+* Recovery after interruption.
+* Logs.
+* Error reporting.
+* Completion notifications.
+
+Prevent duplicate builds and duplicate Git operations.
+
+Persist task and execution state.
+
+The user must be able to leave the workspace and return to the same project and execution history.
+
+13. PREMIUM GLASSMORPHISM DESIGN SYSTEM
+
+Apply the GODS cyber glassmorphism design system to all new and existing pages.
+
+Design direction:
+
+* Dark premium interface.
+* Translucent glass surfaces.
+* Real backdrop blur.
+* Subtle borders.
+* Neon glow.
+* Depth and shadows.
+* Rounded panels.
+* Smooth transitions.
+* Professional typography.
+* High contrast.
+* Premium dashboards.
+* Responsive layouts.
+* Polished empty, loading and error states.
+
+Suggested palette:
+
+:root {
+  --bg: #05070B;
+  --surface: #0A101A;
+  --glass: rgba(17,25,40,.72);
+  --border: rgba(255,255,255,.12);
+  --text: #F4F7FF;
+  --muted: #A5B1C6;
+  --purple: #A855F7;
+  --cyan: #00D9FF;
+  --blue: #3478F6;
+  --green: #00E887;
+  --red: #FF4567;
+  --orange: #FF8A32;
+  --gold: #FFD166;
+}
+
+Make project-specific design decisions.
+
+A game, business dashboard, AI chat app, SaaS product and blockchain interface should have distinct layouts and visual identities while maintaining the GODS quality standard.
+
+Do not sacrifice readability for effects.
+
+Respect accessibility and reduced-motion preferences.
+
+14. REQUIRED PERSISTENT DATA
+
+Inspect the current schema and implement appropriate migrations for:
+
+* Users.
+* GitHub identities.
+* GitHub connections.
+* GitHub repositories.
+* GitHub branches.
+* Repository sync sessions.
+* Repository commits.
+* Sync history.
+* File conflicts.
+* Projects.
+* Project files.
+* File versions.
+* Artifacts.
+* Artifact versions.
+* Export jobs.
+* Build jobs.
+* Build logs.
+* Preview sessions.
+* Device preview configurations.
+* Agents.
+* Agent versions.
+* Agent capabilities.
+* Agent executions.
+* Model providers.
+* Model assignments.
+* Provider health.
+* Failover events.
+* Tasks.
+* Task dependencies.
+* Workflow executions.
+* Test results.
+* Deployment records.
+* Audit events.
+
+Use secure ownership, tenant isolation, indexes and transactions.
+
+15. REQUIRED API MODULES
+
+Implement actual authenticated, validated API operations for:
+
+/api/v1/agents/*
+/api/v1/agent-executions/*
+/api/v1/orchestrator/*
+/api/v1/models/*
+/api/v1/providers/*
+/api/v1/failover/*
+/api/v1/projects/*
+/api/v1/files/*
+/api/v1/file-versions/*
+/api/v1/artifacts/*
+/api/v1/exports/*
+/api/v1/imports/*
+/api/v1/builds/*
+/api/v1/previews/*
+/api/v1/games/*
+/api/v1/tests/*
+/api/v1/github/auth/*
+/api/v1/github/accounts/*
+/api/v1/github/repositories/*
+/api/v1/github/branches/*
+/api/v1/github/sync/*
+/api/v1/github/commits/*
+/api/v1/github/diffs/*
+/api/v1/github/conflicts/*
+/api/v1/deployments/*
+
+Adapt route naming to the existing framework where appropriate.
+
+Every route must have actual service logic, permissions, validation, error handling and persistence.
+
+16. SECURITY AND GITHUB SAFETY
+
+Implement:
+
+* OAuth state validation.
+* Secure callback handling.
+* Minimal repository permissions.
+* Server-side encrypted credentials.
+* Token rotation and revocation handling.
+* Tenant isolation.
+* CSRF protections where applicable.
+* Rate limiting.
+* Webhook signature verification.
+* Audit records.
+* Safe file operations.
+* Secret scanning before commit.
+* Exclusion of sensitive files.
+* Conflict protection.
+* Explicit approval for destructive Git operations.
+
+Never expose private repository data to other users.
+
+Never expose GitHub tokens to the frontend.
+
+Never commit .env files or secrets.
+
+17. REQUIRED END-TO-END ACCEPTANCE TESTS
+
+TEST A — Full application build
+
+Submit one complete SaaS application request.
+
+Verify that all applicable phases run and produce a functioning project.
+
+TEST B — Game build
+
+Submit one complete 3D game request.
+
+Verify that the game can actually run in the preview and that its assets, source files and controls are functional.
+
+TEST C — Agent and model failover
+
+Simulate a provider timeout or failed task in a controlled test.
+
+Verify that the system selects an eligible alternative, retries safely, logs the failover and validates the replacement result.
+
+TEST D — File editing
+
+Create a file, edit it, save it, rename it, download it and read it back.
+
+TEST E — Markdown
+
+Generate a Markdown document, edit the source, inspect the rendered preview and download the .md file.
+
+TEST F — ZIP export and import
+
+Export a complete project, inspect the archive, extract it into an authorized test project and verify the files.
+
+TEST G — Live preview
+
+Change a project file and verify the preview reflects the current version.
+
+TEST H — GitHub login and repository import
+
+Authorize GitHub, select a test repository and import its files.
+
+Verify repository access and imported file contents.
+
+TEST I — GODS to GitHub
+
+Modify a file in GODS, review the diff, commit and verify the remote commit and file contents.
+
+TEST J — GitHub to GODS
+
+Modify a file on the remote repository, pull or synchronize it, and verify GODS receives the change.
+
+TEST K — Conflict handling
+
+Modify the same file independently in GODS and GitHub. Verify conflict detection and user-controlled resolution.
+
+TEST L — Persistence and recovery
+
+Interrupt a controlled background build, recover it and verify that task state and project files remain consistent.
+
+18. RELEASE ACCEPTANCE GATES
+
+Add the following V13-specific gates to the existing V12 release gates:
+
+18. Structured AI response and Markdown renderer verified.
+19. Complete project explorer and file operations verified.
+20. Editable code and Markdown verified.
+21. Artifact registry and ZIP export/import verified.
+22. Real application preview verified.
+23. Real game preview verified.
+24. Device viewport controls verified.
+25. Twenty operational agents verified.
+26. Dynamic provider and agent failover verified.
+27. Persistent background execution and recovery verified.
+28. GitHub OAuth verified.
+29. Repository import verified.
+30. GODS-to-GitHub synchronization verified.
+31. GitHub-to-GODS synchronization verified.
+32. Conflict detection and resolution verified.
+33. Security, isolation and secret protection verified.
+34. Complete project read-back and release report verified.
+
+Use the existing truthful status values:
+
+VERIFIED
+IMPLEMENTED_UNVERIFIED
+PARTIALLY_IMPLEMENTED
+MISSING
+BLOCKED
+FAILED
+UNKNOWN
+NOT_APPLICABLE
+
+Do not mark a gate VERIFIED without evidence.
+
+19. FINAL EXECUTION INSTRUCTIONS
+
+Start by inspecting the existing V12 repository and comparing it with every V13 requirement.
+
+Then implement in priority order:
+
+1. Structured AI responses and artifact handling.
+2. Persistent project explorer and complete file operations.
+3. Code and Markdown editors.
+4. ZIP export/import.
+5. Real application and game build/preview dashboards.
+6. Twenty-agent background execution.
+7. Dynamic agent and model failover.
+8. GitHub OAuth.
+9. Bidirectional GitHub synchronization.
+10. Security, automated testing and release verification.
+
+Do not recreate completed functionality.
+
+Do not replace working code with mockups.
+
+Do not return only a plan.
+
+Do not create fake agents, fake repositories, fake previews or fake downloads.
+
+Do not claim a GitHub commit exists until it has been read back from GitHub.
+
+Do not claim an application builds until the actual build command succeeds.
+
+Do not claim a preview works until the generated project runs.
+
+Do not claim ZIP export works until the archive has been opened and verified.
+
+Do not claim two-way sync works until both directions have passed acceptance tests.
+
+If infrastructure or credentials prevent an operation, report the precise blocker and finish independent work.
+
+At the end, deliver the actual implementation report with:
+
+* Files created and modified.
+* Database migrations.
+* APIs and services.
+* Agent execution evidence.
+* Provider and failover evidence.
+* Build and preview results.
+* ZIP artifact verification.
+* GitHub authorization and sync evidence.
+* Test results.
+* Remaining blockers.
+* Release gate matrix.
+
+FINAL OBJECTIVE: MASTER GODS AI STUDIO V13.0.0 — A SINGLE-REQUEST UNIVERSAL SOFTWARE FACTORY WITH 20 BACKGROUND AGENTS, INTELLIGENT MODEL FAILOVER, COMPLETE EDITABLE PROJECTS, LIVE APP AND GAME PREVIEWS, REAL ZIP DOWNLOADS, AND VERIFIED TWO-WAY GITHUB SYNCHRONIZATION.
