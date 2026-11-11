@@ -139,6 +139,12 @@ export const INITIAL_APPS: AppItem[] = [
     slug: 'neondash-2088',
     tagline: 'Cyberpunk endless runner with onchain Base high scores',
     description: 'A fast-paced synthwave obstacle jumper built for Farcaster frames and mobile browsers. Jump over electric hazards, collect $DASH tokens, and submit verified high scores to the Base blockchain leaderboard.',
+    keyFeatures: [
+      '60FPS synthwave obstacle canvas physics',
+      'Base L2 immutable leaderboard smart contract',
+      'Farcaster Frames v2 SDK integration',
+      '$DASH token with 60% creator fee split'
+    ],
     type: 'arcade',
     category: 'Arcade Games',
     featured: true,
@@ -218,6 +224,12 @@ export const INITIAL_APPS: AppItem[] = [
     slug: 'tipcaster-pro',
     tagline: 'One-tap Farcaster Frames v2 social micro-tipper with Base USDC',
     description: 'Instant social tipping miniapp. Farcaster users can tip content creators 1, 5, or 20 USDC with sponsored gas and automated fee splits, generating a viral verifiable receipt image.',
+    keyFeatures: [
+      '1-Tap Base USDC micro-tipping with zero gas',
+      'Farcaster profile address auto-resolution',
+      'Dynamic verifiable receipt graphics generator',
+      '60% protocol fee cut to creator wallet'
+    ],
     type: 'tipping',
     category: 'Social & Tipping',
     featured: true,
@@ -292,6 +304,12 @@ export const INITIAL_APPS: AppItem[] = [
     slug: 'memeforge-3000',
     tagline: 'Cyber viral meme generator with 1-click Base NFT minting',
     description: 'Create viral web3 memes with cyberpunk typography, animated laser stickers, and automated Base L2 NFT deployment in under 5 seconds.',
+    keyFeatures: [
+      'Cyberpunk laser sticker & typography canvas',
+      '1-Click Base ERC-721 NFT minting',
+      'Gasless collector sponsorship',
+      'Direct Warpcast & Telegram bot sync'
+    ],
     type: 'meme',
     category: 'Creative & NFT',
     featured: true,
@@ -366,6 +384,12 @@ export const INITIAL_APPS: AppItem[] = [
     slug: 'cyberroll-777',
     tagline: 'Provably fair onchain dice & coin flip mini-casino with 60% fee burn',
     description: 'High-octane neon cyber mini-casino. Players test luck with provably fair VRF dice and coin flips. 60% of all house edge fees automatically stream to the creator token pool.',
+    keyFeatures: [
+      'Chainlink VRF provably fair dice & coin flips',
+      '60% house edge automated burn to $ROLL pool',
+      'Instant Base L2 smart wallet payouts',
+      'High-octane neon cyber sound FX'
+    ],
     type: 'casino',
     category: 'DeFi & Gaming',
     featured: false,
@@ -439,6 +463,12 @@ export const INITIAL_APPS: AppItem[] = [
     slug: 'degenoracle-ai',
     tagline: 'Autonomous cultural prediction market with dynamic bonding curves',
     description: 'AI agents continuously scrape crypto Twitter and Farcaster sentiment to generate micro-prediction markets on viral cultural events and protocol milestones.',
+    keyFeatures: [
+      'Autonomous Gemini social sentiment scraper',
+      'Dynamic bonding curve prediction markets',
+      'Live multi-agent consensus odds calculation',
+      'Decentralized oracle resolution on Base'
+    ],
     type: 'prediction',
     category: 'AI & Markets',
     featured: false,

@@ -42,7 +42,29 @@ class MiniappDatabaseService {
     try {
       const stored = localStorage.getItem('gods_miniapp_db_apps');
       if (stored) {
-        this.dbApps = JSON.parse(stored);
+        const parsed: AppItem[] = JSON.parse(stored);
+        this.dbApps = parsed.map((app) => {
+          const initial = INITIAL_APPS.find((i) => i.id === app.id);
+          return {
+            ...app,
+            keyFeatures:
+              app.keyFeatures && app.keyFeatures.length > 0
+                ? app.keyFeatures
+                : initial?.keyFeatures || [
+                    'Interactive mobile casino cabinet architecture',
+                    'Farcaster Frames v2 responsive canvas engine',
+                    'Base L2 automated fee distribution smart contracts',
+                  ],
+            githubRepoUrl:
+              app.githubRepoUrl ||
+              initial?.githubRepoUrl ||
+              `https://github.com/viniapp-builds/${app.slug}`,
+            vercelDeployUrl:
+              app.vercelDeployUrl ||
+              initial?.vercelDeployUrl ||
+              `https://${app.slug}.vini.run`,
+          };
+        });
       } else {
         this.dbApps = [...INITIAL_APPS];
         this.persistApps();

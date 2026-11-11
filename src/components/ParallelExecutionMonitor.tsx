@@ -33,6 +33,10 @@ import {
   AgenticExecution, 
   TaskNode 
 } from '../services/agentFactoryService';
+import { 
+  multiAgentOrchestratorService, 
+  MultiAgentBuildExecution 
+} from '../services/multiAgentOrchestratorService';
 import { FlashGlowCard } from './FlashGlowCard';
 
 interface ParallelExecutionMonitorProps {
@@ -45,9 +49,19 @@ export const ParallelExecutionMonitor: React.FC<ParallelExecutionMonitorProps> =
   const [executions, setExecutions] = useState<AgenticExecution[]>(() => 
     agentFactoryService.getRecentExecutions(12)
   );
+  const [parallelBuildExec, setParallelBuildExec] = useState<MultiAgentBuildExecution | null>(() => 
+    multiAgentOrchestratorService.getCurrentExecution()
+  );
   const [statusFilter, setStatusFilter] = useState<'ALL' | 'EXECUTING' | 'COMPLETED'>('ALL');
   const [isSimulating, setIsSimulating] = useState<boolean>(false);
   const [expandedExecId, setExpandedExecId] = useState<string | null>(null);
+
+  useEffect(() => {
+    const unsub = multiAgentOrchestratorService.subscribe((exec) => {
+      setParallelBuildExec(exec);
+    });
+    return () => unsub();
+  }, []);
 
   const refreshData = () => {
     setExecutions(agentFactoryService.getRecentExecutions(12));
@@ -63,7 +77,10 @@ export const ParallelExecutionMonitor: React.FC<ParallelExecutionMonitorProps> =
         'Construct autonomous multimodal carrier freight dispatch agent with GPS telemetry ingestion',
       ];
       const randomPrompt = prompts[Math.floor(Math.random() * prompts.length)];
-      await agentFactoryService.assembleDynamicTeam(randomPrompt);
+      await Promise.all([
+        agentFactoryService.assembleDynamicTeam(randomPrompt),
+        multiAgentOrchestratorService.executeMultiAgentBuild(randomPrompt)
+      ]);
       refreshData();
     } finally {
       setIsSimulating(false);

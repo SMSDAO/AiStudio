@@ -17,10 +17,18 @@ export const APP_TEMPLATES: AppTemplate[] = [
     author: { name: 'AI Studio Core', handle: '@aistudio' },
     instantiations: 432,
     suggestedFeatures: ['Canvas physics engine', 'Base high score contract', 'Farcaster frame v2 integration', 'Token score multiplier'],
+    keyFeatures: [
+      'HTML5 Canvas 60fps retro runner physics engine',
+      'Onchain Base L2 high-score verification smart contract',
+      'Farcaster Frames v2 interactive embed & cast sharing',
+      'Clanker $TICKER score multiplier with 60% fee sharing'
+    ],
     suggestedPlatforms: ['Farcaster Frames v2', 'Base App', 'Web Mobile'],
     monetizationModel: 'Clanker $TICKER launch with 60% Uniswap v4 trading fee split',
     previewColor: '#a855f7',
     neonGlow: 'purple',
+    githubRepoUrl: 'https://github.com/viniapp-builds/arcade-game-template',
+    liveDemoUrl: 'https://arcade-game.vini.run',
     codePreset: {
       'page.tsx': `// Next.js 15 App Router - Cyber Arcade Core\n'use client';\n\nimport React, { useState } from 'react';\n\nexport default function Page() {\n  const [score, setScore] = useState(0);\n  const [highScore, setHighScore] = useState(1200);\n\n  const handleJump = () => {\n    const newScore = score + 50;\n    setScore(newScore);\n    if (newScore > highScore) setHighScore(newScore);\n  };\n\n  return (\n    <main className="min-h-screen bg-[#070913] text-white flex flex-col items-center justify-center p-4">\n      <h1 className="text-3xl font-black font-display text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">\n        CYBER ARCADE 2088\n      </h1>\n      <div className="p-6 bg-white/5 border border-purple-500/30 rounded-2xl mt-4 text-center max-w-sm w-full backdrop-blur-md">\n        <p className="text-slate-300 text-sm">Score: <span className="font-mono font-bold text-yellow-400">{score}</span> | High: <span className="font-mono text-cyan-400">{highScore}</span></p>\n        <button onClick={handleJump} className="mt-4 w-full px-6 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_0_20px_rgba(168,85,247,0.4)]">\n          Jump Hazard 🚀\n        </button>\n      </div>\n    </main>\n  );\n}`,
     },
@@ -41,10 +49,18 @@ export const APP_TEMPLATES: AppTemplate[] = [
     author: { name: 'AI Studio Core', handle: '@aistudio' },
     instantiations: 618,
     suggestedFeatures: ['Base USDC escrow', 'Gasless sponsored transactions', 'Farcaster profile lookup', 'Dynamic receipt generator'],
+    keyFeatures: [
+      'Gasless Base USDC sponsored micropayments ($1, $5, $20)',
+      'Farcaster profile auto-lookup and identity verification',
+      'Dynamic social receipt PNG generator for instant casts',
+      'Non-custodial smart wallet fee distribution to creators'
+    ],
     suggestedPlatforms: ['Farcaster Frames v2', 'Base App', 'Telegram WebApp'],
     monetizationModel: '60% protocol fee cut on all tips routed to creator smart wallet',
     previewColor: '#3b82f6',
     neonGlow: 'blue',
+    githubRepoUrl: 'https://github.com/viniapp-builds/tipping-bot-template',
+    liveDemoUrl: 'https://tipping-bot.vini.run',
     codePreset: {
       'page.tsx': `// Next.js 15 App Router - Farcaster Tipping Bot\n'use client';\n\nimport React, { useState } from 'react';\n\nexport default function Page() {\n  const [amount, setAmount] = useState(5);\n  const [sent, setSent] = useState(false);\n\n  const handleTip = () => {\n    setSent(true);\n    setTimeout(() => setSent(false), 3000);\n  };\n\n  return (\n    <div className="min-h-screen bg-[#070913] text-white p-4 flex flex-col items-center justify-center">\n      <div className="p-6 bg-white/5 border border-blue-500/30 rounded-2xl max-w-sm w-full backdrop-blur-md">\n        <h2 className="text-xl font-bold font-display text-white">Tip Creator via Base USDC</h2>\n        <p className="text-xs text-slate-400 mt-1">Select an amount to send directly to creator wallet</p>\n        <div className="grid grid-cols-3 gap-2 mt-4">\n          {[1, 5, 20].map(val => (\n            <button key={val} onClick={() => setAmount(val)} className={\`py-2.5 rounded-xl font-bold transition-all \${amount === val ? 'bg-blue-600 text-white shadow-[0_0_15px_rgba(59,130,246,0.5)]' : 'bg-white/5 text-slate-300 hover:bg-white/10'}\`}>\n              \${val} USDC\n            </button>\n          ))}\n        </div>\n        <button onClick={handleTip} className="mt-4 w-full py-3 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-xl font-bold text-white shadow-lg shadow-blue-500/20">\n          {sent ? 'Tip Sent! ⚡' : \`Send \$\${amount} Tip 💸\`}\n        </button>\n      </div>\n    </div>\n  );\n}`,
     },
@@ -65,10 +81,18 @@ export const APP_TEMPLATES: AppTemplate[] = [
     author: { name: 'Elena Rostova', handle: '@elena_eth' },
     instantiations: 512,
     suggestedFeatures: ['HTML5 Canvas renderer', 'Base ERC-721 NFT minting', 'Sticker library', 'Direct Farcaster cast share'],
+    keyFeatures: [
+      'High-resolution HTML5 canvas typography & sticker compositor',
+      'One-click Base L2 ERC-721 instant NFT minting pipeline',
+      'Automated IPFS image upload with pinata gateway caching',
+      'Direct Farcaster deep-link cast share with frame preview'
+    ],
     suggestedPlatforms: ['Farcaster Frames v2', 'Web Mobile', 'Telegram WebApp'],
     monetizationModel: '0.001 ETH mint fee with 60% creator split + secondary royalties',
     previewColor: '#22c55e',
     neonGlow: 'green',
+    githubRepoUrl: 'https://github.com/viniapp-builds/meme-maker-template',
+    liveDemoUrl: 'https://meme-maker.vini.run',
     codePreset: {
       'page.tsx': `// Next.js 15 App Router - Cyber Meme Studio\n'use client';\n\nimport React, { useState } from 'react';\n\nexport default function Page() {\n  const [text, setText] = useState('VIBE CODING ON BASE');\n  return (\n    <div className="min-h-screen bg-[#070913] text-white p-4 flex flex-col items-center justify-center">\n      <h1 className="text-2xl font-bold font-display text-green-400">MEME STUDIO 3000</h1>\n      <input value={text} onChange={e => setText(e.target.value)} className="bg-slate-900 border border-green-500/40 p-2.5 rounded-xl mt-4 text-sm w-64 text-center focus:outline-none" />\n      <div className="w-64 h-64 bg-slate-900 border border-green-500/30 rounded-2xl flex items-center justify-center text-center p-4 mt-4 font-black font-display text-xl uppercase tracking-wider text-green-300 shadow-[0_0_20px_rgba(34,197,94,0.2)]">\n        {text}\n      </div>\n    </div>\n  );\n}`,
     },
@@ -89,10 +113,18 @@ export const APP_TEMPLATES: AppTemplate[] = [
     author: { name: 'Alex Rivera', handle: '@alex_builds' },
     instantiations: 384,
     suggestedFeatures: ['Lockup tier multipliers', 'Automated 60% fee splitter', 'Real-time APR calculator', 'One-click compound'],
+    keyFeatures: [
+      'Multi-tier staking smart contracts with dynamic APR compounding',
+      'Automated 60% Uniswap v4 bonding-curve fee distribution',
+      'Real-time yield calculation and onchain analytics dashboard',
+      'Gas-optimized ERC-20 staking vault with emergency withdrawal'
+    ],
     suggestedPlatforms: ['Base App', 'Web Mobile', 'Telegram WebApp'],
     monetizationModel: '0.25% exit fee + 60% creator trading fee cut on Uniswap',
     previewColor: '#00FF9D',
     neonGlow: 'green',
+    githubRepoUrl: 'https://github.com/viniapp-builds/defi-staking-template',
+    liveDemoUrl: 'https://defi-staking.vini.run',
     codePreset: {
       'page.tsx': `// Next.js 15 App Router - DeFi Staking Vault\n'use client';\n\nimport React, { useState } from 'react';\n\nexport default function Page() {\n  const [staked, setStaked] = useState(2500);\n  const [earned, setEarned] = useState(14.8);\n\n  return (\n    <div className="min-h-screen bg-[#070913] text-white p-4 flex flex-col items-center justify-center">\n      <div className="p-6 bg-white/5 border border-emerald-500/30 rounded-2xl max-w-sm w-full backdrop-blur-md">\n        <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 font-bold">18.4% APY</span>\n        <h2 className="text-xl font-bold font-display mt-2">Base Staking Vault</h2>\n        <div className="grid grid-cols-2 gap-2 mt-4 text-center">\n          <div className="p-3 bg-white/5 rounded-xl"><span className="text-xs text-slate-400 block">Staked</span><span className="font-mono font-bold text-white text-lg">{staked} $AI</span></div>\n          <div className="p-3 bg-white/5 rounded-xl"><span className="text-xs text-slate-400 block">Earned</span><span className="font-mono font-bold text-emerald-400 text-lg">+{earned} $AI</span></div>\n        </div>\n        <button onClick={() => setEarned(e => +(e + 0.5).toFixed(2))} className="mt-4 w-full py-3 bg-gradient-to-r from-emerald-600 to-teal-500 rounded-xl font-bold text-white">\n          Stake More Tokens ⚡\n        </button>\n      </div>\n    </div>\n  );\n}`,
     },
@@ -113,10 +145,18 @@ export const APP_TEMPLATES: AppTemplate[] = [
     author: { name: 'Sora Tanaka', handle: '@sora_agents' },
     instantiations: 470,
     suggestedFeatures: ['Conversational memory', 'Prompt customization UI', 'Pay-per-prompt micro-credits', 'Voice TTS audio playback'],
+    keyFeatures: [
+      'Gemini 2.5 Flash conversational agent with memory & grounding',
+      'Dynamic agent prompt persona customization dashboard',
+      'x402 Pay-per-query micropayments via Base USDC or smart tokens',
+      'Client-side streaming markdown output with code block syntax highlighting'
+    ],
     suggestedPlatforms: ['Web Mobile', 'Telegram WebApp', 'Farcaster Frames v2'],
     monetizationModel: 'x402 Pay-Per-Query (0.0005 ETH per prompt response)',
     previewColor: '#3A8DFF',
     neonGlow: 'blue',
+    githubRepoUrl: 'https://github.com/viniapp-builds/ai-companion-template',
+    liveDemoUrl: 'https://ai-companion.vini.run',
     codePreset: {
       'page.tsx': `// Next.js 15 App Router - Autonomous AI Companion\n'use client';\n\nimport React, { useState } from 'react';\n\nexport default function Page() {\n  const [query, setQuery] = useState('');\n  const [messages, setMessages] = useState([\n    { sender: 'ai', text: 'Hello! I am your AI assistant. What would you like to build or discover today?' }\n  ]);\n\n  const handleSend = () => {\n    if (!query.trim()) return;\n    setMessages(prev => [\n      ...prev,\n      { sender: 'user', text: query },\n      { sender: 'ai', text: \`Analyzing: "\${query}". Solution generated and verified.\` }\n    ]);\n    setQuery('');\n  };\n\n  return (\n    <div className="min-h-screen bg-[#070913] text-white p-4 flex flex-col max-w-md mx-auto">\n      <h1 className="text-xl font-bold text-blue-400 font-display">AI Assistant</h1>\n      <div className="flex-1 my-4 space-y-2 overflow-y-auto">\n        {messages.map((m, i) => (\n          <div key={i} className={\`p-3 rounded-xl text-xs \${m.sender === 'user' ? 'bg-blue-600/30 ml-8 text-right' : 'bg-white/5 mr-8'}\`}>\n            {m.text}\n          </div>\n        ))}\n      </div>\n      <div className="flex space-x-2">\n        <input value={query} onChange={e => setQuery(e.target.value)} onKeyDown={e => e.key === 'Enter' && handleSend()} placeholder="Ask anything..." className="flex-1 bg-white/5 border border-white/10 rounded-xl px-3 py-2 text-xs focus:outline-none" />\n        <button onClick={handleSend} className="px-4 py-2 bg-blue-600 rounded-xl text-xs font-bold">Send</button>\n      </div>\n    </div>\n  );\n}`,
     },
@@ -137,10 +177,18 @@ export const APP_TEMPLATES: AppTemplate[] = [
     author: { name: 'AI Studio Core', handle: '@aistudio' },
     instantiations: 290,
     suggestedFeatures: ['World ID zero-knowledge verification', 'Real-time voting bars', 'Farcaster cast embedding', 'Base gasless ballot signatures'],
+    keyFeatures: [
+      'World ID zero-knowledge proof of personhood sybil prevention',
+      'Live percentage calculation with animated SVG bars',
+      'Gasless cryptographic ballot signature via EIP-712',
+      'Embedded Farcaster interactive Frame v2 state machine'
+    ],
     suggestedPlatforms: ['Farcaster Frames v2', 'World App', 'Base App'],
     monetizationModel: 'Sponsored polling bounties + token liquidity incentives',
     previewColor: '#eab308',
     neonGlow: 'yellow',
+    githubRepoUrl: 'https://github.com/viniapp-builds/community-poll-template',
+    liveDemoUrl: 'https://community-poll.vini.run',
     codePreset: {
       'page.tsx': `// Next.js 15 App Router - Verified Poll App\n'use client';\n\nimport React, { useState } from 'react';\n\nexport default function Page() {\n  const [votes, setVotes] = useState({ yes: 142, no: 38 });\n  const total = votes.yes + votes.no;\n  const yesPct = Math.round((votes.yes / total) * 100);\n\n  return (\n    <div className="max-w-md mx-auto p-4 text-center min-h-screen flex flex-col justify-center">\n      <h2 className="text-xl font-bold font-display text-yellow-400">Community Voting Poll</h2>\n      <p className="text-xs text-slate-300 mt-1">Should we launch the community token on Base?</p>\n      <div className="space-y-3 mt-6">\n        <button onClick={() => setVotes(v => ({ ...v, yes: v.yes + 1 }))} className="w-full p-3 bg-green-950/60 border border-green-500/40 rounded-xl text-left text-xs font-bold text-white relative overflow-hidden">\n          <div className="absolute top-0 bottom-0 left-0 bg-green-600/30" style={{ width: \`\${yesPct}%\` }} />\n          <span className="relative z-10 flex justify-between"><span>YES (Agree)</span><span>{yesPct}% ({votes.yes})</span></span>\n        </button>\n        <button onClick={() => setVotes(v => ({ ...v, no: v.no + 1 }))} className="w-full p-3 bg-red-950/60 border border-red-500/40 rounded-xl text-left text-xs font-bold text-white relative overflow-hidden">\n          <div className="absolute top-0 bottom-0 left-0 bg-red-600/30" style={{ width: \`\${100 - yesPct}%\` }} />\n          <span className="relative z-10 flex justify-between"><span>NO (Disagree)</span><span>{100 - yesPct}% ({votes.no})</span></span>\n        </button>\n      </div>\n    </div>\n  );\n}`,
     },
@@ -161,10 +209,18 @@ export const APP_TEMPLATES: AppTemplate[] = [
     author: { name: 'Kai Takahashi', handle: '@kai_crypto' },
     instantiations: 245,
     suggestedFeatures: ['Markdown compiler', 'Arweave / IPFS permanent storage', 'Collector mint passes', 'Social share embeds'],
+    keyFeatures: [
+      'Next-gen Markdown renderer with math & code syntax coloring',
+      'Arweave / IPFS decentralized immutable content storage',
+      'Base L2 post collector mint passes with 60% creator royalty',
+      'Wallet-authenticated email newsletter subscriptions'
+    ],
     suggestedPlatforms: ['Web Mobile', 'Farcaster Frames v2', 'Base App'],
     monetizationModel: 'Paid article unlocks + 60% collector mint fee split',
     previewColor: '#06b6d4',
     neonGlow: 'cyan',
+    githubRepoUrl: 'https://github.com/viniapp-builds/micro-blog-template',
+    liveDemoUrl: 'https://micro-blog.vini.run',
     codePreset: {
       'page.tsx': `// Next.js 15 App Router - Web3 Micro Blog\n'use client';\n\nimport React, { useState } from 'react';\n\nexport default function Page() {\n  const [posts] = useState([\n    { title: 'The Future of AI Studio Miniapps', date: 'Oct 2026', readTime: '3 min', excerpt: 'How one-prompt mobile apps are changing the internet.' },\n    { title: 'Why 60% Creator Fee Splits Win', date: 'Oct 2026', readTime: '5 min', excerpt: 'Fair tokenomics without intermediaries.' }\n  ]);\n  return (\n    <main className="max-w-xl mx-auto p-4 space-y-4 min-h-screen">\n      <h1 className="text-2xl font-bold font-display text-cyan-400">CREATOR STORIES</h1>\n      {posts.map((p, i) => (\n        <article key={i} className="p-4 bg-white/5 border border-cyan-500/30 rounded-2xl backdrop-blur-md">\n          <h2 className="text-base font-bold text-white">{p.title}</h2>\n          <p className="text-xs text-slate-400 mt-1">{p.excerpt}</p>\n          <div className="flex justify-between items-center mt-3 text-[11px] text-slate-500">\n            <span>{p.date} • {p.readTime}</span>\n            <span className="text-cyan-400 font-bold">Collect Article 💎</span>\n          </div>\n        </article>\n      ))}\n    </main>\n  );\n}`,
     },
@@ -185,10 +241,18 @@ export const APP_TEMPLATES: AppTemplate[] = [
     author: { name: 'Elena Rostova', handle: '@elena_eth' },
     instantiations: 310,
     suggestedFeatures: ['Alchemy / Reservoir NFT indexing', 'Audio & 3D model support', 'Instant seaport buy orders', 'Full-screen showcase mode'],
+    keyFeatures: [
+      '3D model inspection & audio stem visualizer with WebGL',
+      'Reservoir / Seaport protocol instant buy and bid checkout',
+      'Base Smart Wallet one-tap checkout with passkeys',
+      'Curator commission fee split directly routed onchain'
+    ],
     suggestedPlatforms: ['Web Mobile', 'Base App', 'Farcaster Frames v2'],
     monetizationModel: '1% secondary trading fee split + curation commission',
     previewColor: '#ec4899',
     neonGlow: 'purple',
+    githubRepoUrl: 'https://github.com/viniapp-builds/nft-gallery-template',
+    liveDemoUrl: 'https://nft-gallery.vini.run',
     codePreset: {
       'page.tsx': `// Next.js 15 App Router - Cyber NFT Gallery\n'use client';\n\nimport React from 'react';\n\nexport default function Page() {\n  return (\n    <div className="max-w-4xl mx-auto p-4">\n      <h1 className="text-2xl font-bold font-display text-pink-400">CYBER GALLERY</h1>\n      <div className="grid grid-cols-2 gap-3 mt-4">\n        <div className="p-4 bg-white/5 rounded-2xl border border-pink-500/30">\n          <div className="h-40 bg-pink-950/40 rounded-xl flex items-center justify-center text-4xl">💎</div>\n          <h3 className="font-bold text-sm mt-2">Cyber Genesis #001</h3>\n          <p className="text-xs text-cyan-400">0.05 ETH</p>\n        </div>\n      </div>\n    </div>\n  );\n}`,
     },
@@ -209,10 +273,18 @@ export const APP_TEMPLATES: AppTemplate[] = [
     author: { name: 'AI Studio Core', handle: '@aistudio' },
     instantiations: 198,
     suggestedFeatures: ['Google Calendar & iCal export', 'POAP / Base RSVP pass', 'Timezone auto-adaptation', 'Farcaster reminder alerts'],
+    keyFeatures: [
+      'One-click Google Calendar & .ics export with reminders',
+      'Base L2 onchain attendance RSVP commemorative NFT badge',
+      'Automated local timezone conversion & calendar syncing',
+      'Farcaster mini-notification bot integration for live reminders'
+    ],
     suggestedPlatforms: ['Farcaster Frames v2', 'Telegram WebApp', 'Web Mobile'],
     monetizationModel: 'Featured event promoter staking + ticket sales with 60% fee split',
     previewColor: '#f97316',
     neonGlow: 'orange',
+    githubRepoUrl: 'https://github.com/viniapp-builds/event-calendar-template',
+    liveDemoUrl: 'https://event-calendar.vini.run',
     codePreset: {
       'page.tsx': `// Next.js 15 App Router - Web3 Event Calendar\n'use client';\n\nimport React from 'react';\n\nexport default function Page() {\n  return (\n    <div className="max-w-md mx-auto p-4 space-y-3 min-h-screen flex flex-col justify-center">\n      <h1 className="text-xl font-bold font-display text-orange-400">EVENTS RADAR</h1>\n      <div className="p-4 bg-white/5 border border-orange-500/30 rounded-2xl backdrop-blur-md">\n        <div className="text-xs text-orange-300 font-mono">TOMORROW • 18:00 UTC</div>\n        <h3 className="font-bold text-base text-white mt-1">Base Builders Global Demo Day</h3>\n        <p className="text-xs text-slate-400 mt-1">Live pitches, agentic builder demos & onchain rewards.</p>\n        <button className="mt-4 w-full py-2.5 bg-orange-600 rounded-xl text-xs font-bold text-white shadow-lg shadow-orange-500/30">\n          RSVP & GET PASS 🎟️\n        </button>\n      </div>\n    </div>\n  );\n}`,
     },

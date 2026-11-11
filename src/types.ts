@@ -263,11 +263,14 @@ export interface AppTemplate {
   };
   instantiations?: number;
   suggestedFeatures: string[];
+  keyFeatures?: string[];
   suggestedPlatforms: string[];
   monetizationModel: string;
   previewColor: string;
   neonGlow: 'purple' | 'blue' | 'green' | 'orange' | 'yellow' | 'cyan';
   codePreset: Record<string, string>;
+  githubRepoUrl?: string;
+  liveDemoUrl?: string;
   createdAt?: string;
   updatedAt?: string;
 }
@@ -300,6 +303,7 @@ export interface AppItem {
   slug: string;
   tagline: string;
   description: string;
+  keyFeatures?: string[];
   type: MiniappType;
   category: string;
   featured: boolean;

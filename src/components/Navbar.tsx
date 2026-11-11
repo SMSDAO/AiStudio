@@ -202,7 +202,7 @@ export function Navbar({
             }`}
           >
             <ShieldAlert className="w-3.5 h-3.5 text-emerald-400" />
-            <span>Admin</span>
+            <span>Operations</span>
           </button>
         </div>
 

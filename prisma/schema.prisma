@@ -299,3 +299,52 @@ model AuditLog {
 
   user      User?    @relation(fields: [userId], references: [id])
 }
+
+model Transaction {
+  id               String   @id @default(uuid())
+  userId           String?
+  walletAddress    String
+  chainId          Int
+  txHash           String   @unique
+  blockNumber      Int?
+  fromAddress      String
+  toAddress        String
+  valueNative      String?
+  gasUsedGwei      Float?
+  status           String   @default("CONFIRMED") // PENDING, CONFIRMED, REVERTED
+  transactionType  String   // 'VAULT_DEPOSIT' | 'VAULT_WITHDRAW' | 'FLASH_LOAN_ARBITRAGE' | 'ERC20_APPROVE'
+  metadata         Json?
+  createdAt        DateTime @default(now())
+
+  user             User?    @relation(fields: [userId], references: [id])
+}
+
+model VaultPosition {
+  id               String   @id @default(uuid())
+  userId           String?
+  walletAddress    String
+  chainId          Int
+  vaultAddress     String
+  stakedShares     String   @default("0")
+  depositedUsdc    Float    @default(0)
+  accruedYieldUsd  Float    @default(0)
+  lastDepositAt    DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  user             User?    @relation(fields: [userId], references: [id])
+
+  @@unique([walletAddress, chainId, vaultAddress])
+}
+
+model EventLog {
+  id               String   @id @default(uuid())
+  chainId          Int
+  contractAddress  String
+  eventName        String
+  blockNumber      Int
+  txHash           String
+  logIndex         Int
+  parameters       Json
+  createdAt        DateTime @default(now())
+}
+

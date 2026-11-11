@@ -229,8 +229,9 @@ export default function App() {
         splashBackgroundColor: '#070913',
         webhookUrl: `https://${template.slug}.aistudio.run/api/webhook`,
       },
-      githubRepoUrl: `https://github.com/aistudio-builds/${template.slug}`,
-      vercelDeployUrl: `https://${template.slug}.aistudio.run`,
+      githubRepoUrl: template.githubRepoUrl || `https://github.com/aistudio-builds/${template.slug}`,
+      vercelDeployUrl: template.liveDemoUrl || `https://${template.slug}.aistudio.run`,
+      keyFeatures: template.keyFeatures || template.suggestedFeatures || [],
       files: template.codePreset,
       buildSteps: [],
     };
@@ -390,6 +391,8 @@ export default function App() {
               );
             }}
             canFeatureApp={canFeatureApp}
+            onSelectTemplate={handleSelectTemplateForApp}
+            templates={templates}
           />
         )}
 
