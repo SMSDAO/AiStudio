@@ -30,7 +30,7 @@ import { agentFactoryService } from '../services/agentFactoryService';
 import { artifactStorageService } from '../services/artifactStorageService';
 import { FlashGlowCard } from './FlashGlowCard';
 import { ParallelExecutionMonitor } from './ParallelExecutionMonitor';
-import { AgentRegistryManager } from './AgentRegistryManager';
+import { AgentRegistryManager } from './GodsOperationsCenter/AgentRegistryManager';
 
 interface GodsOperationsCenterProps {
   currentUserEmail?: string;

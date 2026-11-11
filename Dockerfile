@@ -1,5 +1,10 @@
-# Production Dockerfile for ViniApp 2.0.0 Enterprise Monorepo
+# Production Dockerfile for Google Cloud Run (us-east5) & Multi-Cloud Deployment
+# Deployment Target: us-east5 (Regional Run Endpoint)
+# Port: 3000
 FROM node:22-alpine AS base
+LABEL maintainer="gxqstudio@gmail.com"
+LABEL cloud.google.region="us-east5"
+LABEL cloud.google.service="viniapp-enterprise"
 
 # Install dependencies only when needed
 FROM base AS deps
